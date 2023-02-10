@@ -1,0 +1,46 @@
+{
+    "sourceFile": "components/ui/button.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1671187357314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671627359683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n .btn {\r\n     text-decoration: none;\r\n     cursor: pointer;\r\n     font: inherit;\r\n-    background-color: #03be9f;\r\n-    border: 1px solid #03be9f;\r\n+    background-color: #005760;\r\n+    border: 1px solid #005760;\r\n     border-radius: 6px;\r\n     color: #dafff7;\r\n     padding: 0.5rem 1.5rem;\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1671627374516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n   }\r\n   \r\n   .btn:hover,\r\n   .btn:active {\r\n-    background-color: #02afa1;\r\n-    border-color: #02afa1;\r\n+    background-color: #00251c;;\r\n+    border-color: #00251c;;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671627389358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     font: inherit;\r\n     background-color: #005760;\r\n     border: 1px solid #005760;\r\n     border-radius: 6px;\r\n-    color: #dafff7;\r\n+    color: #ffff9b;\r\n     padding: 0.5rem 1.5rem;\r\n     text-align: center;\r\n     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);\r\n   }\r\n"
+                },
+                {
+                    "date": 1671627409680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     font: inherit;\r\n     background-color: #005760;\r\n     border: 1px solid #005760;\r\n     border-radius: 6px;\r\n-    color: #ffff9b;\r\n+    color: #fffbbd;\r\n     padding: 0.5rem 1.5rem;\r\n     text-align: center;\r\n     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);\r\n   }\r\n"
+                },
+                {
+                    "date": 1671628105054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n .btn {\r\n     text-decoration: none;\r\n     cursor: pointer;\r\n     font: inherit;\r\n-    background-color: #005760;\r\n-    border: 1px solid #005760;\r\n+    background-color: #332D5A;\r\n+    border: 1px solid #332D5A;\r\n     border-radius: 6px;\r\n     color: #fffbbd;\r\n     padding: 0.5rem 1.5rem;\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1671628130609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n   }\r\n   \r\n   .btn:hover,\r\n   .btn:active {\r\n-    background-color: #00251c;;\r\n-    border-color: #00251c;;\r\n+    background-color: #1c1833;\r\n+    border-color: #1c1833;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671628151125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     font: inherit;\r\n     background-color: #332D5A;\r\n     border: 1px solid #332D5A;\r\n     border-radius: 6px;\r\n-    color: #fffbbd;\r\n+    color: #ffe2ff;\r\n     padding: 0.5rem 1.5rem;\r\n     text-align: center;\r\n     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);\r\n   }\r\n"
+                }
+            ],
+            "date": 1671187357314,
+            "name": "Commit-0",
+            "content": ".btn {\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n    font: inherit;\r\n    background-color: #03be9f;\r\n    border: 1px solid #03be9f;\r\n    border-radius: 6px;\r\n    color: #dafff7;\r\n    padding: 0.5rem 1.5rem;\r\n    text-align: center;\r\n    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);\r\n  }\r\n  \r\n  .btn:hover,\r\n  .btn:active {\r\n    background-color: #02afa1;\r\n    border-color: #02afa1;\r\n  }"
+        }
+    ]
+}

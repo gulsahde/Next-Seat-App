@@ -1,0 +1,126 @@
+{
+    "sourceFile": "styles/globals.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1671015852437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671627139666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n h4,\n h5,\n h6 {\n   font-family: 'Lato', sans-serif;\n-  color: #2b2b2b;\n+  color: red;\n }\n \n ul {\n   list-style: none;\n"
+                },
+                {
+                    "date": 1671627174565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n h4,\n h5,\n h6 {\n   font-family: 'Lato', sans-serif;\n-  color: red;\n+  color: #00251c;\n }\n \n ul {\n   list-style: none;\n"
+                },
+                {
+                    "date": 1671627189394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n-  color: #414141;\n+  color: #red;\n   background-color: #e4f1f1;\n } \n \n h1,\n"
+                },
+                {
+                    "date": 1671627207756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n-  color: #red;\n+  color: #414141;\n   background-color: #e4f1f1;\n } \n \n h1,\n"
+                },
+                {
+                    "date": 1671627247811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n-  color: #414141;\n+  color:  #ffce4c;\n   background-color: #e4f1f1;\n } \n \n h1,\n"
+                },
+                {
+                    "date": 1671627264829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n-  color:  #ffce4c;\n+  color:  #ff7c22;\n   background-color: #e4f1f1;\n } \n \n h1,\n"
+                },
+                {
+                    "date": 1671627280247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n   color:  #ff7c22;\n-  background-color: #e4f1f1;\n+  background-color: #ffff9b;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671627438512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n   color:  #ff7c22;\n-  background-color: #ffff9b;\n+  background-color: #fffbbd;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671627881393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n   color:  #ff7c22;\n-  background-color: #fffbbd;\n+  background-color: e2e2e2;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671627904375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n \n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n-  color:  #ff7c22;\n-  background-color: e2e2e2;\n+  color:  #78767c;\n+  background-color: #e2e2e2;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671627931941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n h4,\n h5,\n h6 {\n   font-family: 'Lato', sans-serif;\n-  color: #00251c;\n+  color: red;\n }\n \n ul {\n   list-style: none;\n"
+                },
+                {
+                    "date": 1671627946612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n h4,\n h5,\n h6 {\n   font-family: 'Lato', sans-serif;\n-  color: red;\n+  color: #1c1833;\n }\n \n ul {\n   list-style: none;\n"
+                },
+                {
+                    "date": 1671631353969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');\n+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap'); */\n \n * {\n   box-sizing: border-box;\n }\n@@ -8,8 +8,9 @@\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n   color:  #78767c;\n   background-color: #e2e2e2;\n+  font-family: \"DM Sans\", sans-serif, serif;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631395413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n   color:  #78767c;\n   background-color: #e2e2e2;\n-  font-family: \"DM Sans\", sans-serif, serif;\n+  font-family:  Roobert, \"Helvetica Neue\", Arial, Helvetica, sans-serif;;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631444419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n   color:  #78767c;\n   background-color: #e2e2e2;\n-  font-family:  Roobert, \"Helvetica Neue\", Arial, Helvetica, sans-serif;;\n+  font-family:  Roobert, \"Helvetica Neue\", Arial, sans-serif;;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631492656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap'); */\n+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');\n \n * {\n   box-sizing: border-box;\n }\n"
+                },
+                {
+                    "date": 1671631503658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n }\n \n body {\n   margin: 0;\n-  font-family: 'Open Sans', 'Lato', sans-serif;\n+  /* font-family: 'Open Sans', 'Lato', sans-serif; */\n   color:  #78767c;\n   background-color: #e2e2e2;\n-  font-family:  Roobert, \"Helvetica Neue\", Arial, sans-serif;;\n+  font-family: Roobert, \"Helvetica Neue\", Arial, Helvetica, sans-serif;;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631519326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   margin: 0;\n   /* font-family: 'Open Sans', 'Lato', sans-serif; */\n   color:  #78767c;\n   background-color: #e2e2e2;\n-  font-family: Roobert, \"Helvetica Neue\", Arial, Helvetica, sans-serif;;\n+  font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631545441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n   margin: 0;\n   /* font-family: 'Open Sans', 'Lato', sans-serif; */\n   color:  #78767c;\n   background-color: #e2e2e2;\n-  font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif;\n+  /* font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif; */\n+  font-family: \"DM Sans\", sans-serif, serif;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631567501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n   margin: 0;\n   /* font-family: 'Open Sans', 'Lato', sans-serif; */\n   color:  #78767c;\n   background-color: #e2e2e2;\n-  /* font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif; */\n-  font-family: \"DM Sans\", sans-serif, serif;\n+  font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631588315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n   /* font-family: 'Open Sans', 'Lato', sans-serif; */\n   color:  #78767c;\n   background-color: #e2e2e2;\n   font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif;\n+  line-height: 1.5rem;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631607163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,12 +6,12 @@\n \n body {\n   margin: 0;\n   /* font-family: 'Open Sans', 'Lato', sans-serif; */\n-  color:  #78767c;\n+  color: #78767c;\n   background-color: #e2e2e2;\n   font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif;\n-  line-height: 1.5rem;\n+  line-height: 120%;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631624827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n   /* font-family: 'Open Sans', 'Lato', sans-serif; */\n   color: #78767c;\n   background-color: #e2e2e2;\n   font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif;\n-  line-height: 120%;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631706661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   margin: 0;\n   /* font-family: 'Open Sans', 'Lato', sans-serif; */\n   color: #78767c;\n   background-color: #e2e2e2;\n-  font-family: Roobert, \"Helvetica Neue\", Arial, sans-serif;\n+  font-family: Roobert, \"Helvetica Neue\", Arial;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671631716586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,11 @@\n }\n \n body {\n   margin: 0;\n-  /* font-family: 'Open Sans', 'Lato', sans-serif; */\n+  font-family: 'Open Sans', 'Lato', sans-serif;\n   color: #78767c;\n   background-color: #e2e2e2;\n-  font-family: Roobert, \"Helvetica Neue\", Arial;\n } \n \n h1,\n h2,\n"
+                },
+                {
+                    "date": 1671632984432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n-  color: #78767c;\n+  color: #ffe2ff;;\n   background-color: #e2e2e2;\n } \n \n h1,\n"
+                },
+                {
+                    "date": 1675078048065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n body {\n   margin: 0;\n   font-family: 'Open Sans', 'Lato', sans-serif;\n-  color: #ffe2ff;;\n+  color: #ffe2ff;\n   background-color: #e2e2e2;\n } \n \n h1,\n@@ -29,5 +29,6 @@\n \n .center {\n   margin: auto;\n   text-align: center;\n+  color: #1c1833;\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1671015852437,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: 'Open Sans', 'Lato', sans-serif;\n  color: #414141;\n  background-color: #e4f1f1;\n} \n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: 'Lato', sans-serif;\n  color: #2b2b2b;\n}\n\nul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.center {\n  margin: auto;\n  text-align: center;\n}"
+        }
+    ]
+}

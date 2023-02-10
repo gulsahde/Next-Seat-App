@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/event-detail/logistics-item.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1671196405713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1671196405713,
+            "name": "Commit-0",
+            "content": ".item {\n  display: flex;\n  font-size: 1.5rem;\n  align-items: center;\n  flex-direction: column;\n  text-align: center;\n  color: #aefff8;\n}\n\n.item span {\n  display: block;\n}\n\n.icon {\n  margin-right: 1rem;\n  color: #18e0d0;\n}\n\n.icon svg {\n  width: 2rem;\n  height: 2rem;\n}\n\n@media (min-width: 768px) {\n  .item {\n    align-items: flex-start;\n    text-align: left;\n  }\n}"
+        }
+    ]
+}

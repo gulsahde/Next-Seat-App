@@ -1,0 +1,22 @@
+{
+    "sourceFile": "components/icons/calendar-icon.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1671190275457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671190584580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,15 @@\n       <svg\r\n         xmlns=\"http://www.w3.org/2000/svg\"\r\n         fill=\"none\"\r\n         viewBox=\"0 0 24 24\"\r\n-        stroke-width=\"1.5\"\r\n+        strokeWidth={1.5}\r\n         stroke=\"currentColor\"\r\n-        class=\"w-6 h-6\"\r\n+        className=\"w-6 h-6\"\r\n       >\r\n         <path\r\n-          stroke-linecap=\"round\"\r\n-          stroke-linejoin=\"round\"\r\n+          strokeLinecap=\"round\"\r\n+          strokeLinejoin=\"round\"\r\n           d=\"M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5\"\r\n         />\r\n       </svg>\r\n     );\r\n"
+                }
+            ],
+            "date": 1671190275457,
+            "name": "Commit-0",
+            "content": "function CalendarIcon() {\r\n    return (\r\n      <svg\r\n        xmlns=\"http://www.w3.org/2000/svg\"\r\n        fill=\"none\"\r\n        viewBox=\"0 0 24 24\"\r\n        stroke-width=\"1.5\"\r\n        stroke=\"currentColor\"\r\n        class=\"w-6 h-6\"\r\n      >\r\n        <path\r\n          stroke-linecap=\"round\"\r\n          stroke-linejoin=\"round\"\r\n          d=\"M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5\"\r\n        />\r\n      </svg>\r\n    );\r\n  }\r\n  \r\n  export default CalendarIcon;"
+        }
+    ]
+}

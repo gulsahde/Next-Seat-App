@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/icons/time-icon.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1671190979732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1671190979732,
+            "name": "Commit-0",
+            "content": "function TimeIcon(){\r\n    return(\r\n        <svg\r\n            xmlns=\"http://www.w3.org/2000/svg\"\r\n            fill=\"none\"\r\n            viewBox=\"0 0 24 24\"\r\n            strokeWidth={1.5}\r\n            stroke=\"currentColor\"\r\n            className=\"w-6 h-6\"\r\n            >\r\n            <path\r\n                strokeLinecap=\"round\"\r\n                strokeLinejoin=\"round\"\r\n                d=\"M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z\"\r\n            />\r\n        </svg>\r\n    )\r\n}\r\n\r\nexport default TimeIcon;"
+        }
+    ]
+}

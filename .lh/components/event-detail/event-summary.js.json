@@ -1,0 +1,22 @@
+{
+    "sourceFile": "components/event-detail/event-summary.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1671196398658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671197445382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n-import classes from './event-summary.module.css';\n+import styles from './event-summary.module.css';\n \n function EventSummary(props) {\n   const { title } = props;\n \n   return (\n-    <section className={classes.summary}>\n+    <section className={styles.summary}>\n       <h1>{title}</h1>\n     </section>\n   );\n }\n"
+                }
+            ],
+            "date": 1671196398658,
+            "name": "Commit-0",
+            "content": "import classes from './event-summary.module.css';\n\nfunction EventSummary(props) {\n  const { title } = props;\n\n  return (\n    <section className={classes.summary}>\n      <h1>{title}</h1>\n    </section>\n  );\n}\n\nexport default EventSummary;"
+        }
+    ]
+}

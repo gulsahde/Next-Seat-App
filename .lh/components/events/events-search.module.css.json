@@ -1,0 +1,78 @@
+{
+    "sourceFile": "components/events/events-search.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1671628226668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671628247329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .form {\r\n     margin: 2rem auto;\r\n     box-shadow: 0 1px 4px rgba(0,0,0,0.2);\r\n     padding: 1rem;\r\n-    background-color: #ffe2ff;\r\n+    background-color: #e2e2e2;\r\n     border-radius: 6px;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1671628256101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .form {\r\n     margin: 2rem auto;\r\n     box-shadow: 0 1px 4px rgba(0,0,0,0.2);\r\n     padding: 1rem;\r\n-    background-color: #e2e2e2;\r\n+    background-color: #ffe2ff;\r\n     border-radius: 6px;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1671628302089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n   }\r\n   \r\n   .control select {\r\n     font: inherit;\r\n-    background-color: white;\r\n+    background-color: #e2e2e2;\r\n     border-radius: 6px;\r\n     width: 70%;\r\n     padding: 0.25rem;\r\n   }\r\n"
+                },
+                {
+                    "date": 1671628322457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n   }\r\n   \r\n   .control select {\r\n     font: inherit;\r\n-    background-color: #e2e2e2;\r\n+    background-color: #f8efed;\r\n     border-radius: 6px;\r\n     width: 70%;\r\n     padding: 0.25rem;\r\n   }\r\n"
+                },
+                {
+                    "date": 1671628330968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .form {\r\n     margin: 2rem auto;\r\n     box-shadow: 0 1px 4px rgba(0,0,0,0.2);\r\n     padding: 1rem;\r\n-    background-color: #ffe2ff;\r\n+    background-color: #f8efed;\r\n     border-radius: 6px;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1671628380875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,10 @@\n   .form button {\r\n     width: 100%;\r\n     font: inherit;\r\n     padding: 0.25rem 0.5rem;\r\n-    background-color: #03be9f;\r\n-    border: 1px solid #03be9f;\r\n+    background-color: #332D5A;\r\n+    border: 1px solid #332D5A;\r\n     color: #dafff7;\r\n     border-radius: 4px;\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1671628389086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     font: inherit;\r\n     padding: 0.25rem 0.5rem;\r\n     background-color: #332D5A;\r\n     border: 1px solid #332D5A;\r\n-    color: #dafff7;\r\n+    color: #ffe2ff;\r\n     border-radius: 4px;\r\n   }\r\n   \r\n   @media (min-width: 768px) {\r\n"
+                },
+                {
+                    "date": 1671628416408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n   .form button {\r\n     width: 100%;\r\n     font: inherit;\r\n     padding: 0.25rem 0.5rem;\r\n-    background-color: #332D5A;\r\n+    background-color: red;\r\n     border: 1px solid #332D5A;\r\n     color: #ffe2ff;\r\n     border-radius: 4px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1671628421845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n   .form button {\r\n     width: 100%;\r\n     font: inherit;\r\n     padding: 0.25rem 0.5rem;\r\n-    background-color: red;\r\n+    background-color: #332D5A;\r\n     border: 1px solid #332D5A;\r\n     color: #ffe2ff;\r\n     border-radius: 4px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1671632850227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .form {\r\n     margin: 2rem auto;\r\n     box-shadow: 0 1px 4px rgba(0,0,0,0.2);\r\n     padding: 1rem;\r\n-    background-color: #f8efed;\r\n+    background-color: #1c1833;\r\n     border-radius: 6px;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1671632872382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n   }\r\n   \r\n   .control select {\r\n     font: inherit;\r\n-    background-color: #f8efed;\r\n+    background-color: #ffe2ff;\r\n     border-radius: 6px;\r\n     width: 70%;\r\n     padding: 0.25rem;\r\n   }\r\n"
+                },
+                {
+                    "date": 1671632884653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n   }\r\n   \r\n   .control select {\r\n     font: inherit;\r\n-    background-color: #ffe2ff;\r\n+    background-color: #e2e2e2;\r\n     border-radius: 6px;\r\n     width: 70%;\r\n     padding: 0.25rem;\r\n   }\r\n"
+                },
+                {
+                    "date": 1671632900567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n   }\r\n   \r\n   .control select {\r\n     font: inherit;\r\n-    background-color: #e2e2e2;\r\n+    background-color: #ffe2ff;\r\n     border-radius: 6px;\r\n     width: 70%;\r\n     padding: 0.25rem;\r\n   }\r\n"
+                },
+                {
+                    "date": 1671632950411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .form {\r\n     margin: 2rem auto;\r\n-    box-shadow: 0 1px 4px rgba(0,0,0,0.2);\r\n+    box-shadow: 0 1px 4px red;\r\n     padding: 1rem;\r\n     background-color: #1c1833;\r\n     border-radius: 6px;\r\n     width: 90%;\r\n"
+                },
+                {
+                    "date": 1671632957142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .form {\r\n     margin: 2rem auto;\r\n-    box-shadow: 0 1px 4px red;\r\n+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);\r\n     padding: 1rem;\r\n     background-color: #1c1833;\r\n     border-radius: 6px;\r\n     width: 90%;\r\n"
+                }
+            ],
+            "date": 1671628226668,
+            "name": "Commit-0",
+            "content": ".form {\r\n    margin: 2rem auto;\r\n    box-shadow: 0 1px 4px rgba(0,0,0,0.2);\r\n    padding: 1rem;\r\n    background-color: #ffe2ff;\r\n    border-radius: 6px;\r\n    width: 90%;\r\n    max-width: 40rem;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    flex-direction: column;\r\n    gap: 1rem;\r\n  }\r\n  \r\n  .controls {\r\n    width: 100%;\r\n    display: flex;\r\n    gap: 1rem;\r\n    flex-direction: column;\r\n  }\r\n  \r\n  .control {\r\n    flex: 1;\r\n    display: flex;\r\n    gap: 1rem;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n  }\r\n  \r\n  .control label {\r\n    font-weight: bold;\r\n  }\r\n  \r\n  .control select {\r\n    font: inherit;\r\n    background-color: white;\r\n    border-radius: 6px;\r\n    width: 70%;\r\n    padding: 0.25rem;\r\n  }\r\n  \r\n  .form button {\r\n    width: 100%;\r\n    font: inherit;\r\n    padding: 0.25rem 0.5rem;\r\n    background-color: #03be9f;\r\n    border: 1px solid #03be9f;\r\n    color: #dafff7;\r\n    border-radius: 4px;\r\n  }\r\n  \r\n  @media (min-width: 768px) {\r\n    .form {\r\n      flex-direction: row;\r\n    }\r\n  \r\n    .controls {\r\n      width: 80%;\r\n      flex-direction: row;\r\n    }\r\n  \r\n    .control select {\r\n      width: 100%;\r\n    }\r\n  \r\n    .form button {\r\n      width: 20%;\r\n    }\r\n  }"
+        }
+    ]
+}

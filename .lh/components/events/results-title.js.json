@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/events/results-title.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1671617875663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1671617875663,
+            "name": "Commit-0",
+            "content": "import Button from '../ui/button';\r\nimport styles from './results-title.module.css';\r\n\r\nfunction ResultsTitle(props) {\r\n  const { date } = props;\r\n\r\n  const humanReadableDate = new Date(date).toLocaleDateString('en-US', {\r\n    month: 'long',\r\n    year: 'numeric',\r\n  });\r\n\r\n  return (\r\n    <section className={styles.title}>\r\n      <h1>Events in {humanReadableDate}</h1>\r\n      <Button link='/events'>Show all events</Button>\r\n    </section>\r\n  );\r\n}\r\n\r\nexport default ResultsTitle;\r\n"
+        }
+    ]
+}

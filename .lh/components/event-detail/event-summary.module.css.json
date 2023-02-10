@@ -1,0 +1,46 @@
+{
+    "sourceFile": "components/event-detail/event-summary.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1671196401106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671632519104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   padding-top: 3rem;\n   font-size: 2rem;\n   text-align: center;\n   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);\n-  color: white;\n+  color: e2e2e2;\n }\n \n @media (min-width: 768px) {\n   .summary h1 {\n"
+                },
+                {
+                    "date": 1671632541055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,17 @@\n .summary {\n   width: 100%;\n   height: 30vh;\n-  background-image: linear-gradient(to bottom left,  #008b79, #1180a1);\n+  background-image: linear-gradient(to bottom left,  #ffe2ff, #1180a1);\n }\n \n .summary h1 {\n   margin: 0;\n   padding-top: 3rem;\n   font-size: 2rem;\n   text-align: center;\n   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);\n-  color: e2e2e2;\n+  color: #e2e2e2;\n }\n \n @media (min-width: 768px) {\n   .summary h1 {\n"
+                },
+                {
+                    "date": 1671632553976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .summary {\n   width: 100%;\n   height: 30vh;\n-  background-image: linear-gradient(to bottom left,  #ffe2ff, #1180a1);\n+  background-image: linear-gradient(to bottom left,  #ffe2ff, #e1c6ff);\n }\n \n .summary h1 {\n   margin: 0;\n"
+                },
+                {
+                    "date": 1671632566971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .summary {\n   width: 100%;\n   height: 30vh;\n-  background-image: linear-gradient(to bottom left,  #ffe2ff, #e1c6ff);\n+  background-image: linear-gradient(to bottom left,  #1c1833, #e1c6ff);\n }\n \n .summary h1 {\n   margin: 0;\n"
+                },
+                {
+                    "date": 1671632581809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .summary {\n   width: 100%;\n   height: 30vh;\n-  background-image: linear-gradient(to bottom left,  #1c1833, #e1c6ff);\n+  background-image: linear-gradient(to bottom left,  #e1c6ff, #1c1833);\n }\n \n .summary h1 {\n   margin: 0;\n"
+                },
+                {
+                    "date": 1671632601492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .summary {\n   width: 100%;\n   height: 30vh;\n-  background-image: linear-gradient(to bottom left,  #e1c6ff, #1c1833);\n+  background-image: linear-gradient(to bottom left,  #e1c6ff, #78767c);\n }\n \n .summary h1 {\n   margin: 0;\n"
+                },
+                {
+                    "date": 1671632628928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   margin: 0;\n   padding-top: 3rem;\n   font-size: 2rem;\n   text-align: center;\n-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);\n+  text-shadow: 0 3px 10px rgb(82, 82, 82);\n   color: #e2e2e2;\n }\n \n @media (min-width: 768px) {\n"
+                }
+            ],
+            "date": 1671196401106,
+            "name": "Commit-0",
+            "content": ".summary {\n  width: 100%;\n  height: 30vh;\n  background-image: linear-gradient(to bottom left,  #008b79, #1180a1);\n}\n\n.summary h1 {\n  margin: 0;\n  padding-top: 3rem;\n  font-size: 2rem;\n  text-align: center;\n  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);\n  color: white;\n}\n\n@media (min-width: 768px) {\n  .summary h1 {\n    font-size: 5rem;\n  }\n}"
+        }
+    ]
+}

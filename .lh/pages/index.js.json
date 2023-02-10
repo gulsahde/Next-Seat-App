@@ -1,0 +1,90 @@
+{
+    "sourceFile": "pages/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1671015712709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671015733699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+function HomePage(){\n+  return(\n+    <div>\n+\n+    </div>\n+  )\n+}\n+\n+export default HomePage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671015911983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function HomePage(){\n   return(\n     <div>\n-\n+      <h1>The Home Page</h1>\n     </div>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1671102276297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n+import { getFeaturedEvents } from \"../dummy-data\";\n+\n function HomePage(){\n+\n+  const featuredEvents=getFeaturedEvents();\n   return(\n     <div>\n       <h1>The Home Page</h1>\n     </div>\n"
+                },
+                {
+                    "date": 1671131468157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n import { getFeaturedEvents } from \"../dummy-data\";\n+import EventList from \"../components/events/event-list\";\n \n function HomePage(){\n \n-  const featuredEvents=getFeaturedEvents();\n+  const featuredEvents=getFeaturedEvents(); //call\n   return(\n     <div>\n-      <h1>The Home Page</h1>\n+      <EventList />\n     </div>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1671131532850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n   const featuredEvents=getFeaturedEvents(); //call\n   return(\n     <div>\n-      <EventList />\n+      <EventList items={featuredEvents}/>\n     </div>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1674819068168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,24 @@\n-import { getFeaturedEvents } from \"../dummy-data\";\n+//import { getFeaturedEvents } from \"../dummy-data\";\n+import { getFeaturedEvents } from \"../helpers/api-utils\";\n import EventList from \"../components/events/event-list\";\n \n-function HomePage(){\n+function HomePage() {\n \n-  const featuredEvents=getFeaturedEvents(); //call\n-  return(\n+  // const featuredEvents = getFeaturedEvents(); //call\n+  return (\n     <div>\n-      <EventList items={featuredEvents}/>\n+      <EventList items={props.events} />\n     </div>\n   )\n }\n \n+export async function getStaticProps() {\n+  const featuredEvents = await getFeaturedEvents();\n+  return {\n+    props: {\n+      events: featuredEvents,\n+    }\n+  }\n+}\n+\n export default HomePage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1674819086716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //import { getFeaturedEvents } from \"../dummy-data\";\n import { getFeaturedEvents } from \"../helpers/api-utils\";\n import EventList from \"../components/events/event-list\";\n \n-function HomePage() {\n+function HomePage(props) {\n \n   // const featuredEvents = getFeaturedEvents(); //call\n   return (\n     <div>\n"
+                },
+                {
+                    "date": 1675073648549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n   const featuredEvents = await getFeaturedEvents();\n   return {\n     props: {\n       events: featuredEvents,\n-    }\n+    },\n+    revalidate: 1800\n   }\n }\n \n export default HomePage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675338894438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-//import { getFeaturedEvents } from \"../dummy-data\";\n+import Head from 'next/head';\n import { getFeaturedEvents } from \"../helpers/api-utils\";\n import EventList from \"../components/events/event-list\";\n \n function HomePage(props) {\n"
+                },
+                {
+                    "date": 1675339331933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,11 @@\n \n   // const featuredEvents = getFeaturedEvents(); //call\n   return (\n     <div>\n+      <Head>\n+        <title>Next.js Concert Events</title>\n+      </Head>\n       <EventList items={props.events} />\n     </div>\n   )\n }\n"
+                },
+                {
+                    "date": 1675339671304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n   return (\n     <div>\n       <Head>\n         <title>Next.js Concert Events</title>\n+        <meta name=\"description\" content=\"Concert Tickets - Search all tickets, see seat locations.\"/>\n       </Head>\n       <EventList items={props.events} />\n     </div>\n   )\n"
+                },
+                {
+                    "date": 1675339991197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   // const featuredEvents = getFeaturedEvents(); //call\n   return (\n     <div>\n       <Head>\n-        <title>Next.js Concert Events</title>\n+        <title>Next Seat</title>\n         <meta name=\"description\" content=\"Concert Tickets - Search all tickets, see seat locations.\"/>\n       </Head>\n       <EventList items={props.events} />\n     </div>\n"
+                },
+                {
+                    "date": 1675340076815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n   return (\n     <div>\n       <Head>\n         <title>Next Seat</title>\n-        <meta name=\"description\" content=\"Concert Tickets - Search all tickets, see seat locations.\"/>\n+        <meta\n+          name=\"description\"\n+          content=\"Concert Tickets - Search all tickets, see seat locations.\" />\n       </Head>\n       <EventList items={props.events} />\n     </div>\n   )\n"
+                },
+                {
+                    "date": 1675340208846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       <Head>\n         <title>Next Seat</title>\n         <meta\n           name=\"description\"\n-          content=\"Concert Tickets - Search all tickets, see seat locations.\" />\n+          content=\"Tickets - Search all tickets, see seat locations.\" />\n       </Head>\n       <EventList items={props.events} />\n     </div>\n   )\n"
+                },
+                {
+                    "date": 1675414429899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   // const featuredEvents = getFeaturedEvents(); //call\n   return (\n     <div>\n       <Head>\n-        <title>Next Seat</title>\n+        <title>Trending Events</title>\n         <meta\n           name=\"description\"\n           content=\"Tickets - Search all tickets, see seat locations.\" />\n       </Head>\n"
+                },
+                {
+                    "date": 1675414791785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   // const featuredEvents = getFeaturedEvents(); //call\n   return (\n     <div>\n       <Head>\n-        <title>Trending Events</title>\n+        <title>Next Seat | Trending Events</title>\n         <meta\n           name=\"description\"\n           content=\"Tickets - Search all tickets, see seat locations.\" />\n       </Head>\n"
+                },
+                {
+                    "date": 1675414871658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       <Head>\n         <title>Next Seat | Trending Events</title>\n         <meta\n           name=\"description\"\n-          content=\"Tickets - Search all tickets, see seat locations.\" />\n+          content=\"Find tickets online for concerts, sports, theater, other events near you from Next Seat.\" />\n       </Head>\n       <EventList items={props.events} />\n     </div>\n   )\n"
+                },
+                {
+                    "date": 1676035408031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n import EventList from \"../components/events/event-list\";\n \n function HomePage(props) {\n \n-  // const featuredEvents = getFeaturedEvents(); //call\n   return (\n     <div>\n       <Head>\n         <title>Next Seat | Trending Events</title>\n"
+                }
+            ],
+            "date": 1671015712709,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

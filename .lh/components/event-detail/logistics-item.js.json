@@ -1,0 +1,22 @@
+{
+    "sourceFile": "components/event-detail/logistics-item.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1671196403179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671197459031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n-import classes from './logistics-item.module.css';\n+import styles from './logistics-item.module.css';\n \n function LogisticsItem(props) {\n   const { icon: Icon } = props;\n \n   return (\n-    <li className={classes.item}>\n-      <span className={classes.icon}>\n+    <li className={styles.item}>\n+      <span className={styles.icon}>\n         <Icon />\n       </span>\n-      <span className={classes.content}>{props.children}</span>\n+      <span className={styles.content}>{props.children}</span>\n     </li>\n   );\n }\n \n"
+                }
+            ],
+            "date": 1671196403179,
+            "name": "Commit-0",
+            "content": "import classes from './logistics-item.module.css';\n\nfunction LogisticsItem(props) {\n  const { icon: Icon } = props;\n\n  return (\n    <li className={classes.item}>\n      <span className={classes.icon}>\n        <Icon />\n      </span>\n      <span className={classes.content}>{props.children}</span>\n    </li>\n  );\n}\n\nexport default LogisticsItem;\n"
+        }
+    ]
+}

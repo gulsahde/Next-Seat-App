@@ -1,0 +1,22 @@
+{
+    "sourceFile": "components/icons/location-icon.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1671190149117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671190615055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,20 +3,20 @@\n     <svg\r\n       xmlns=\"http://www.w3.org/2000/svg\"\r\n       fill=\"none\"\r\n       viewBox=\"0 0 24 24\"\r\n-      stroke-width=\"1.5\"\r\n+      strokeWidth={1.5}\r\n       stroke=\"currentColor\"\r\n-      class=\"w-6 h-6\"\r\n+      className=\"w-6 h-6\"\r\n     >\r\n       <path\r\n-        stroke-linecap=\"round\"\r\n-        stroke-linejoin=\"round\"\r\n+        strokeLinecap=\"round\"\r\n+        strokeLinejoin=\"round\"\r\n         d=\"M15 10.5a3 3 0 11-6 0 3 3 0 016 0z\"\r\n       />\r\n       <path\r\n-        stroke-linecap=\"round\"\r\n-        stroke-linejoin=\"round\"\r\n+        strokeLinecap=\"round\"\r\n+        strokeLinejoin=\"round\"\r\n         d=\"M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z\"\r\n       />\r\n     </svg>\r\n   );\r\n"
+                }
+            ],
+            "date": 1671190149117,
+            "name": "Commit-0",
+            "content": "function LocationIcon() {\r\n  return (\r\n    <svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      fill=\"none\"\r\n      viewBox=\"0 0 24 24\"\r\n      stroke-width=\"1.5\"\r\n      stroke=\"currentColor\"\r\n      class=\"w-6 h-6\"\r\n    >\r\n      <path\r\n        stroke-linecap=\"round\"\r\n        stroke-linejoin=\"round\"\r\n        d=\"M15 10.5a3 3 0 11-6 0 3 3 0 016 0z\"\r\n      />\r\n      <path\r\n        stroke-linecap=\"round\"\r\n        stroke-linejoin=\"round\"\r\n        d=\"M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z\"\r\n      />\r\n    </svg>\r\n  );\r\n}\r\n\r\nexport default LocationIcon;\r\n"
+        }
+    ]
+}

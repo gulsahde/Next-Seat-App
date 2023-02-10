@@ -1,0 +1,54 @@
+{
+    "sourceFile": "components/event-detail/event-content.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1671196392448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671632115249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .content {\n   font-size: 1.5rem;\n-  color: #3a3a3a;\n+  color: red;\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n   margin-top: 8rem;\n"
+                },
+                {
+                    "date": 1671632299304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .content {\n   font-size: 1.5rem;\n-  color: red;\n+  color: #78767c;\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n   margin-top: 8rem;\n"
+                },
+                {
+                    "date": 1671632309730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .content {\n   font-size: 1.5rem;\n-  color: #78767c;\n+  color: #1c1833;\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n   margin-top: 8rem;\n"
+                },
+                {
+                    "date": 1671632397331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .content {\n   font-size: 1.5rem;\n-  color: #1c1833;\n+  color: #69676C;\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n   margin-top: 8rem;\n"
+                },
+                {
+                    "date": 1671632408317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .content {\n   font-size: 1.5rem;\n-  color: #69676C;\n+  color: #4C4B4F;\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n   margin-top: 8rem;\n"
+                },
+                {
+                    "date": 1671632437834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .content {\n   font-size: 1.5rem;\n-  color: #4C4B4F;\n+  color: rgb(82, 82, 82);\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n   margin-top: 8rem;\n"
+                },
+                {
+                    "date": 1671632460361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .content {\n-  font-size: 1.5rem;\n+  font-size: 1.25rem;\n   color: rgb(82, 82, 82);\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n"
+                },
+                {
+                    "date": 1671632469165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .content {\n-  font-size: 1.25rem;\n+  font-size: 1.30rem;\n   color: rgb(82, 82, 82);\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n"
+                },
+                {
+                    "date": 1671632479447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .content {\n-  font-size: 1.30rem;\n+  font-size: 1.5rem;\n   color: rgb(82, 82, 82);\n   width: 90%;\n   max-width: 40em;\n   margin: auto;\n"
+                }
+            ],
+            "date": 1671196392448,
+            "name": "Commit-0",
+            "content": ".content {\n  font-size: 1.5rem;\n  color: #3a3a3a;\n  width: 90%;\n  max-width: 40em;\n  margin: auto;\n  margin-top: 8rem;\n  text-align: center;\n}"
+        }
+    ]
+}

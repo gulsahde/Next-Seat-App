@@ -1,0 +1,42 @@
+{
+    "sourceFile": "helpers/api-utils.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1674819089187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1674830241825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,10 @@\n \r\n export async function getFeaturedEvents() {\r\n     const allEvents = await getAllEvents();\r\n     return allEvents.filter((event) => event.isFeatured);\r\n+}\r\n+\r\n+export async function getEventById(id) {\r\n+    const allEvents = await getAllEvents();\r\n+    return allEvents.find((event) => event.id === id);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675251884223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,17 @@\n \r\n export async function getEventById(id) {\r\n     const allEvents = await getAllEvents();\r\n     return allEvents.find((event) => event.id === id);\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+export async function getFilteredEvents(dateFilter) {\r\n+    const { year, month } = dateFilter;\r\n+    const allEvents = await getAllEvents();\r\n+  \r\n+    let filteredEvents = allEvents.filter((event) => {\r\n+      const eventDate = new Date(event.date);\r\n+      return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;\r\n+    });\r\n+  \r\n+    return filteredEvents;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675251912939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,12 +24,12 @@\n \r\n export async function getFilteredEvents(dateFilter) {\r\n     const { year, month } = dateFilter;\r\n     const allEvents = await getAllEvents();\r\n-  \r\n+\r\n     let filteredEvents = allEvents.filter((event) => {\r\n-      const eventDate = new Date(event.date);\r\n-      return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;\r\n+        const eventDate = new Date(event.date);\r\n+        return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;\r\n     });\r\n\\ No newline at end of file\n-  \r\n+\r\n     return filteredEvents;\r\n-  }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1676024826443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n export async function getEventById(id) {\r\n     const allEvents = await getAllEvents();\r\n     return allEvents.find((event) => event.id === id);\r\n-}\r\n+  }\r\n \r\n export async function getFilteredEvents(dateFilter) {\r\n     const { year, month } = dateFilter;\r\n     const allEvents = await getAllEvents();\r\n"
+                },
+                {
+                    "date": 1676024928870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,15 +21,16 @@\n     const allEvents = await getAllEvents();\r\n     return allEvents.find((event) => event.id === id);\r\n   }\r\n \r\n+\r\n export async function getFilteredEvents(dateFilter) {\r\n     const { year, month } = dateFilter;\r\n     const allEvents = await getAllEvents();\r\n-\r\n+  \r\n     let filteredEvents = allEvents.filter((event) => {\r\n-        const eventDate = new Date(event.date);\r\n-        return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;\r\n+      const eventDate = new Date(event.date);\r\n+      return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;\r\n\\ No newline at end of file\n     });\r\n-\r\n+  \r\n     return filteredEvents;\r\n-}\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1676024959659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,16 @@\n     const response = await fetch(\"https://dummy-data-b97a0-default-rtdb.firebaseio.com/concert-tickets.json\");\r\n     const data = await response.json();\r\n \r\n     const events = [];\r\n+\r\n     for (const key in data) {\r\n         events.push({\r\n             id: key,\r\n             ...data[key]\r\n         });\r\n     }\r\n+\r\n     return events;\r\n }\r\n \r\n export async function getFeaturedEvents() {\r\n@@ -19,18 +21,18 @@\n \r\n export async function getEventById(id) {\r\n     const allEvents = await getAllEvents();\r\n     return allEvents.find((event) => event.id === id);\r\n-  }\r\n+}\r\n \r\n \r\n export async function getFilteredEvents(dateFilter) {\r\n     const { year, month } = dateFilter;\r\n     const allEvents = await getAllEvents();\r\n-  \r\n+\r\n     let filteredEvents = allEvents.filter((event) => {\r\n-      const eventDate = new Date(event.date);\r\n-      return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;\r\n+        const eventDate = new Date(event.date);\r\n+        return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;\r\n\\ No newline at end of file\n     });\r\n-  \r\n+\r\n     return filteredEvents;\r\n-  }\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1674819089187,
+            "name": "Commit-0",
+            "content": "export async function getAllEvents() {\r\n    const response = await fetch(\"https://dummy-data-b97a0-default-rtdb.firebaseio.com/concert-tickets.json\");\r\n    const data = await response.json();\r\n\r\n    const events = [];\r\n    for (const key in data) {\r\n        events.push({\r\n            id: key,\r\n            ...data[key]\r\n        });\r\n    }\r\n    return events;\r\n}\r\n\r\nexport async function getFeaturedEvents() {\r\n    const allEvents = await getAllEvents();\r\n    return allEvents.filter((event) => event.isFeatured);\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "components/icons/arrow-right-icon.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1671189882370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671190322213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,20 @@\n function ArrowRightIcon() {\r\n     return (\r\n-      <svg\r\n-        xmlns='http://www.w3.org/2000/svg'\r\n-        viewBox='0 0 20 20'\r\n-        fill='currentColor'\r\n-      >\r\n-        <path\r\n-          fillRule='evenodd'\r\n-          d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'\r\n-          clipRule='evenodd'\r\n-        />\r\n-      </svg>\r\n+        <svg\r\n+            xmlns=\"http://www.w3.org/2000/svg\"\r\n+            fill=\"none\"\r\n+            viewBox=\"0 0 24 24\"\r\n+            stroke-width=\"1.5\"\r\n+            stroke=\"currentColor\"\r\n+            class=\"w-6 h-6\"\r\n+        >\r\n+            <path\r\n+            stroke-linecap=\"round\"\r\n+            stroke-linejoin=\"round\"\r\n+            d=\"M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3\"\r\n+            />\r\n+        </svg>\r\n     );\r\n   }\r\n   \r\n   export default ArrowRightIcon;\r\n"
+                },
+                {
+                    "date": 1671190555677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,18 +3,18 @@\n         <svg\r\n             xmlns=\"http://www.w3.org/2000/svg\"\r\n             fill=\"none\"\r\n             viewBox=\"0 0 24 24\"\r\n-            stroke-width=\"1.5\"\r\n+            strokeWidth={1.5}\r\n             stroke=\"currentColor\"\r\n-            class=\"w-6 h-6\"\r\n-        >\r\n+            className=\"w-6 h-6\"\r\n+            >\r\n             <path\r\n-            stroke-linecap=\"round\"\r\n-            stroke-linejoin=\"round\"\r\n-            d=\"M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3\"\r\n+                strokeLinecap=\"round\"\r\n+                strokeLinejoin=\"round\"\r\n+                d=\"M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3\"\r\n             />\r\n-        </svg>\r\n+            </svg>\r\n     );\r\n   }\r\n   \r\n   export default ArrowRightIcon;\r\n"
+                }
+            ],
+            "date": 1671189882370,
+            "name": "Commit-0",
+            "content": "function ArrowRightIcon() {\r\n    return (\r\n      <svg\r\n        xmlns='http://www.w3.org/2000/svg'\r\n        viewBox='0 0 20 20'\r\n        fill='currentColor'\r\n      >\r\n        <path\r\n          fillRule='evenodd'\r\n          d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'\r\n          clipRule='evenodd'\r\n        />\r\n      </svg>\r\n    );\r\n  }\r\n  \r\n  export default ArrowRightIcon;\r\n  "
+        }
+    ]
+}

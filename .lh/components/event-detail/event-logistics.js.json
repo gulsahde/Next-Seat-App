@@ -1,0 +1,50 @@
+{
+    "sourceFile": "components/event-detail/event-logistics.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1671196394796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671197310703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,34 @@\n-import AddressIcon from '../icons/address-icon';\n-import DateIcon from '../icons/date-icon';\n+import LocationIcon from '../icons/location-icon';\n+import CalendarIcon from '../icons/calendar-icon';\n import LogisticsItem from './logistics-item';\n-import classes from './event-logistics.module.css';\n+import styles from './event-logistics.module.css';\n \n function EventLogistics(props) {\n-  const { date, address, image, imageAlt } = props;\n+  const { date, time,location, image, imageAlt } = props;\n \n   const humanReadableDate = new Date(date).toLocaleDateString('en-US', {\n     day: 'numeric',\n     month: 'long',\n     year: 'numeric',\n   });\n+  // TIME FORMAT CONVERTER - BEGINNING\n+  const [hourString, minute] = time.split(\":\");\n+  const hour = +hourString % 24;\n+  const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n+  // TIME FORMAT CONVERTER - END\n   const addressText = address.replace(', ', '\\n');\n \n   return (\n-    <section className={classes.logistics}>\n-      <div className={classes.image}>\n+    <section className={styles.logistics}>\n+      <div className={styles.image}>\n         <img src={`/${image}`} alt={imageAlt} />\n       </div>\n-      <ul className={classes.list}>\n-        <LogisticsItem icon={DateIcon}>\n+      <ul className={styles.list}>\n+        <LogisticsItem icon={CalendarIcon}>\n           <time>{humanReadableDate}</time>\n         </LogisticsItem>\n-        <LogisticsItem icon={AddressIcon}>\n+        <LogisticsItem icon={LocationIcon}>\n           <address>{addressText}</address>\n         </LogisticsItem>\n       </ul>\n     </section>\n"
+                },
+                {
+                    "date": 1671197388649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n import LocationIcon from '../icons/location-icon';\n import CalendarIcon from '../icons/calendar-icon';\n import LogisticsItem from './logistics-item';\n+import TimeIcon from '../icons/time-icon';\n import styles from './event-logistics.module.css';\n \n function EventLogistics(props) {\n   const { date, time,location, image, imageAlt } = props;\n \n-  const humanReadableDate = new Date(date).toLocaleDateString('en-US', {\n+  const readableDateFormat = new Date(date).toLocaleDateString('en-US', {\n     day: 'numeric',\n     month: 'long',\n     year: 'numeric',\n   });\n@@ -24,10 +25,13 @@\n         <img src={`/${image}`} alt={imageAlt} />\n       </div>\n       <ul className={styles.list}>\n         <LogisticsItem icon={CalendarIcon}>\n-          <time>{humanReadableDate}</time>\n+          <time>{readableDateFormat}</time>\n         </LogisticsItem>\n+        <LogisticsItem icon={TimeIcon}>\n+          <time>{readableTimeFormat}</time>\n+        </LogisticsItem>\n         <LogisticsItem icon={LocationIcon}>\n           <address>{addressText}</address>\n         </LogisticsItem>\n       </ul>\n"
+                },
+                {
+                    "date": 1671197428019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import TimeIcon from '../icons/time-icon';\n import styles from './event-logistics.module.css';\n \n function EventLogistics(props) {\n-  const { date, time,location, image, imageAlt } = props;\n+  const { date, time, location, image, imageAlt } = props;\n \n   const readableDateFormat = new Date(date).toLocaleDateString('en-US', {\n     day: 'numeric',\n     month: 'long',\n@@ -16,9 +16,9 @@\n   const [hourString, minute] = time.split(\":\");\n   const hour = +hourString % 24;\n   const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n   // TIME FORMAT CONVERTER - END\n-  const addressText = address.replace(', ', '\\n');\n+  const locationText = location.replace(', ', '\\n');\n \n   return (\n     <section className={styles.logistics}>\n       <div className={styles.image}>\n@@ -31,9 +31,9 @@\n         <LogisticsItem icon={TimeIcon}>\n           <time>{readableTimeFormat}</time>\n         </LogisticsItem>\n         <LogisticsItem icon={LocationIcon}>\n-          <address>{addressText}</address>\n+          <address>{locationText}</address>\n         </LogisticsItem>\n       </ul>\n     </section>\n   );\n"
+                },
+                {
+                    "date": 1671197678682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     month: 'long',\n     year: 'numeric',\n   });\n   // TIME FORMAT CONVERTER - BEGINNING\n-  const [hourString, minute] = time.split(\":\");\n+  const [hourString, minute] = time.value.split(\":\");\n   const hour = +hourString % 24;\n   const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n   // TIME FORMAT CONVERTER - END\n   const locationText = location.replace(', ', '\\n');\n"
+                },
+                {
+                    "date": 1671197695381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     month: 'long',\n     year: 'numeric',\n   });\n   // TIME FORMAT CONVERTER - BEGINNING\n-  const [hourString, minute] = time.value.split(\":\");\n+  const [hourString, minute] = time.split(\":\");\n   const hour = +hourString % 24;\n   const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n   // TIME FORMAT CONVERTER - END\n   const locationText = location.replace(', ', '\\n');\n"
+                },
+                {
+                    "date": 1671197817553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n   const [hourString, minute] = time.split(\":\");\n   const hour = +hourString % 24;\n   const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n   // TIME FORMAT CONVERTER - END\n+  \n   const locationText = location.replace(', ', '\\n');\n \n   return (\n     <section className={styles.logistics}>\n"
+                },
+                {
+                    "date": 1671198167933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,13 @@\n     month: 'long',\n     year: 'numeric',\n   });\n   // TIME FORMAT CONVERTER - BEGINNING\n-  const [hourString, minute] = time.split(\":\");\n-  const hour = +hourString % 24;\n-  const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n+  // const [hourString, minute] = time.split(\":\");\n+  // const hour = +hourString % 24;\n+  // const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n   // TIME FORMAT CONVERTER - END\n+  const readableTimeFormat = new Date(time).toLocaleTimeString('en-US', { hour: \"2-digit\", minute: \"2-digit\" }); //11:50 PM\n   \n   const locationText = location.replace(', ', '\\n');\n \n   return (\n"
+                },
+                {
+                    "date": 1671198190232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,12 @@\n     month: 'long',\n     year: 'numeric',\n   });\n   // TIME FORMAT CONVERTER - BEGINNING\n-  // const [hourString, minute] = time.split(\":\");\n-  // const hour = +hourString % 24;\n-  // const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n+  const [hourString, minute] = time.split(\":\");\n+  const hour = +hourString % 24;\n+  const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n   // TIME FORMAT CONVERTER - END\n-  const readableTimeFormat = new Date(time).toLocaleTimeString('en-US', { hour: \"2-digit\", minute: \"2-digit\" }); //11:50 PM\n-  \n   const locationText = location.replace(', ', '\\n');\n \n   return (\n     <section className={styles.logistics}>\n"
+                }
+            ],
+            "date": 1671196394796,
+            "name": "Commit-0",
+            "content": "import AddressIcon from '../icons/address-icon';\nimport DateIcon from '../icons/date-icon';\nimport LogisticsItem from './logistics-item';\nimport classes from './event-logistics.module.css';\n\nfunction EventLogistics(props) {\n  const { date, address, image, imageAlt } = props;\n\n  const humanReadableDate = new Date(date).toLocaleDateString('en-US', {\n    day: 'numeric',\n    month: 'long',\n    year: 'numeric',\n  });\n  const addressText = address.replace(', ', '\\n');\n\n  return (\n    <section className={classes.logistics}>\n      <div className={classes.image}>\n        <img src={`/${image}`} alt={imageAlt} />\n      </div>\n      <ul className={classes.list}>\n        <LogisticsItem icon={DateIcon}>\n          <time>{humanReadableDate}</time>\n        </LogisticsItem>\n        <LogisticsItem icon={AddressIcon}>\n          <address>{addressText}</address>\n        </LogisticsItem>\n      </ul>\n    </section>\n  );\n}\n\nexport default EventLogistics;\n"
+        }
+    ]
+}

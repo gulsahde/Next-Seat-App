@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/events/results-title.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1671617888265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1671617888265,
+            "name": "Commit-0",
+            "content": ".title {\r\n    margin: 2rem auto;\r\n    width: 90%;\r\n    max-width: 40rem;\r\n    text-align: center;\r\n  }"
+        }
+    ]
+}

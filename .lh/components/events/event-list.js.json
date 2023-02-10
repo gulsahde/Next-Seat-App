@@ -1,0 +1,46 @@
+{
+    "sourceFile": "components/events/event-list.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1671105364063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671108436568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n+import EventItem from \"./event-item\";\r\n+\r\n function EventList(props){\r\n     const {items} = props;\r\n     return <ul>\r\n-        {items.map(event => <li></li>}\r\n+        {items.map(event => <EventItem />}\r\n     </ul>\r\n }\r\n \r\n export default EventList;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671108513620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n function EventList(props){\r\n     const {items} = props;\r\n     return <ul>\r\n-        {items.map(event => <EventItem />}\r\n+        {items.map(event => <EventItem/>)}\r\n     </ul>\r\n }\r\n \r\n export default EventList;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671130829925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,18 @@\n \r\n function EventList(props){\r\n     const {items} = props;\r\n     return <ul>\r\n-        {items.map(event => <EventItem/>)}\r\n+        {items.map((event) => (\r\n+        <EventItem \r\n+            id={event.id} \r\n+            title={event.title} \r\n+            location={event.location} \r\n+            date={event.date} \r\n+            time={event.time}\r\n+            image={event.image}\r\n+        />\r\n+        ))}\r\n     </ul>\r\n }\r\n \r\n export default EventList;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671130909215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     const {items} = props;\r\n     return <ul>\r\n         {items.map((event) => (\r\n         <EventItem \r\n+            key={event.id}\r\n             id={event.id} \r\n             title={event.title} \r\n             location={event.location} \r\n             date={event.date} \r\n"
+                },
+                {
+                    "date": 1671131398869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     const {items} = props;\r\n     return <ul>\r\n         {items.map((event) => (\r\n         <EventItem \r\n-            key={event.id}\r\n+            key={event.id} //jsx-eslint kuralı.\r\n             id={event.id} \r\n             title={event.title} \r\n             location={event.location} \r\n             date={event.date} \r\n"
+                },
+                {
+                    "date": 1671136169762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     const {items} = props;\r\n     return <ul>\r\n         {items.map((event) => (\r\n         <EventItem \r\n-            key={event.id} //jsx-eslint kuralı.\r\n+            key={event.id} //jsx-eslint rule.\r\n             id={event.id} \r\n             title={event.title} \r\n             location={event.location} \r\n             date={event.date} \r\n"
+                },
+                {
+                    "date": 1671179629109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import EventItem from \"./event-item\";\r\n+import styles from \"./event-list.module.css\"\r\n \r\n function EventList(props){\r\n     const {items} = props;\r\n-    return <ul>\r\n+    return <ul className={styles.list}>\r\n         {items.map((event) => (\r\n         <EventItem \r\n             key={event.id} //jsx-eslint rule.\r\n             id={event.id} \r\n"
+                }
+            ],
+            "date": 1671105364063,
+            "name": "Commit-0",
+            "content": "function EventList(props){\r\n    const {items} = props;\r\n    return <ul>\r\n        {items.map(event => <li></li>}\r\n    </ul>\r\n}\r\n\r\nexport default EventList;"
+        }
+    ]
+}

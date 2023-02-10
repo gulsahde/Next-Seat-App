@@ -1,0 +1,54 @@
+{
+    "sourceFile": "components/layout/main-header.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1671632675040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671632685002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     justify-content: space-between;\r\n     align-items: baseline;\r\n     padding: 1rem 10%;\r\n     height: 5rem;\r\n-    background-color: red;\r\n+    background-color: #1c1833;\r\n   }\r\n   \r\n   .logo {\r\n     font-size: 1.5rem;\r\n"
+                },
+                {
+                    "date": 1671632694558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    color: #94fdfd;\r\n+    color: red;\r\n   }\r\n   \r\n   .logo a {\r\n     text-decoration: none;\r\n"
+                },
+                {
+                    "date": 1671632704668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,15 @@\n   }\r\n   \r\n   .logo {\r\n     font-size: 1.5rem;\r\n-    color: white;\r\n+    color: red;\r\n     font-family: 'Fira', sans-serif;\r\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    color: red;\r\n+    color: #94fdfd;\r\n   }\r\n   \r\n   .logo a {\r\n     text-decoration: none;\r\n"
+                },
+                {
+                    "date": 1671632714483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   }\r\n   \r\n   .logo {\r\n     font-size: 1.5rem;\r\n-    color: red;\r\n+    color: white;\r\n     font-family: 'Fira', sans-serif;\r\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n@@ -20,9 +20,9 @@\n   }\r\n   \r\n   .logo a {\r\n     text-decoration: none;\r\n-    color: #94fdfd;\r\n+    color: red;\r\n   }\r\n   \r\n   .navigation a {\r\n     text-decoration: none;\r\n"
+                },
+                {
+                    "date": 1671632733959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,14 @@\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    color: #94fdfd;\r\n+    color: #ffe2ff;\r\n   }\r\n   \r\n   .logo a {\r\n     text-decoration: none;\r\n-    color: red;\r\n+    color: #ffe2ff;\r\n   }\r\n   \r\n   .navigation a {\r\n     text-decoration: none;\r\n"
+                },
+                {
+                    "date": 1671632744224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   }\r\n   \r\n   .navigation a {\r\n     text-decoration: none;\r\n-    color: #74dacc;\r\n+    color: red;\r\n     font-size: 1rem;\r\n   }\r\n   \r\n   @media (min-width: 768px) {\r\n"
+                },
+                {
+                    "date": 1671632761601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   }\r\n   \r\n   .navigation a {\r\n     text-decoration: none;\r\n-    color: red;\r\n+    color: #e2e2e2;\r\n     font-size: 1rem;\r\n   }\r\n   \r\n   @media (min-width: 768px) {\r\n"
+                },
+                {
+                    "date": 1671632778159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    color: #ffe2ff;\r\n+    color: red;\r\n   }\r\n   \r\n   .logo a {\r\n     text-decoration: none;\r\n"
+                },
+                {
+                    "date": 1671632792074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,15 @@\n   }\r\n   \r\n   .logo {\r\n     font-size: 1.5rem;\r\n-    color: white;\r\n+    color: #e2e2e2;\r\n     font-family: 'Fira', sans-serif;\r\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    color: red;\r\n+    color: #e2e2e2;\r\n   }\r\n   \r\n   .logo a {\r\n     text-decoration: none;\r\n"
+                }
+            ],
+            "date": 1671632675040,
+            "name": "Commit-0",
+            "content": ".header {\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: baseline;\r\n    padding: 1rem 10%;\r\n    height: 5rem;\r\n    background-color: red;\r\n  }\r\n  \r\n  .logo {\r\n    font-size: 1.5rem;\r\n    color: white;\r\n    font-family: 'Fira', sans-serif;\r\n    height: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: #94fdfd;\r\n  }\r\n  \r\n  .logo a {\r\n    text-decoration: none;\r\n    color: #94fdfd;\r\n  }\r\n  \r\n  .navigation a {\r\n    text-decoration: none;\r\n    color: #74dacc;\r\n    font-size: 1rem;\r\n  }\r\n  \r\n  @media (min-width: 768px) {\r\n    .logo {\r\n      font-size: 2.5rem;\r\n    }\r\n  \r\n    .navigation a {\r\n      font-size: 1.5rem;\r\n    }\r\n  }"
+        }
+    ]
+}

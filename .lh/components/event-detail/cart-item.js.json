@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/event-detail/cart-item.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1671461415519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1671461415519,
+            "name": "Commit-0",
+            "content": "import styles from './cart-item.module.css';\n\nfunction CartItem(props) {\n  const { icon: Icon } = props;\n\n  return (\n    <li className={styles.item}>\n      <span className={styles.icon}>\n        <Icon />\n      </span>\n      <span className={styles.content}>{props.children}</span>\n    </li>\n  );\n}\n\nexport default CartItem;"
+        }
+    ]
+}

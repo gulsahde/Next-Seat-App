@@ -1,0 +1,266 @@
+{
+    "sourceFile": "components/event-detail/event-cart.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 62,
+            "patches": [
+                {
+                    "date": 1671461351725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671628578139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n-  color: #d5eeeb;\n+  color: red;\n   display: flex;\n   justify-content: space-between;\n   gap: 1rem;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1671628597094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n-  color: red;\n+  color: #ffe2ff;\n   display: flex;\n   justify-content: space-between;\n   gap: 1rem;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1671628606003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   width: 10rem;\n   height: 10rem;\n   border-radius: 50%;\n   overflow: hidden;\n-  border: 5px solid white;\n+  border: 5px solid red;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671628656319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n-  color: #ffe2ff;\n+  color: #red;\n   display: flex;\n   justify-content: space-between;\n   gap: 1rem;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1671628661502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n-  color: #red;\n+  color: red;\n   display: flex;\n   justify-content: space-between;\n   gap: 1rem;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1671628691505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n-  color: red;\n+  color: #ffe2ff;\n   display: flex;\n   justify-content: space-between;\n   gap: 1rem;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1671628696814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   width: 10rem;\n   height: 10rem;\n   border-radius: 50%;\n   overflow: hidden;\n-  border: 5px solid red;\n+  border: 5px solid green;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671628715652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   width: 10rem;\n   height: 10rem;\n   border-radius: 50%;\n   overflow: hidden;\n-  border: 5px solid green;\n+  border: 5px solid #e1c6ff;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671628727687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \n .image {\n   width: 10rem;\n   height: 10rem;\n-  border-radius: 50%;\n+  /* border-radius: 50%; */\n   overflow: hidden;\n   border: 5px solid #e1c6ff;\n }\n \n"
+                },
+                {
+                    "date": 1671628733567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \n .image {\n   width: 10rem;\n   height: 10rem;\n-  /* border-radius: 50%; */\n+  border-radius: 50%;\n   overflow: hidden;\n   border: 5px solid #e1c6ff;\n }\n \n"
+                },
+                {
+                    "date": 1671628881247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n .list {\n   flex: 3;\n   display: flex;\n-  gap: 2rem;\n+  gap: 10rem;\n   justify-content: center;\n   align-items: center;\n   flex-direction: column;\n }\n"
+                },
+                {
+                    "date": 1671628911659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n \n .image {\n   width: 10rem;\n   height: 10rem;\n-  border-radius: 50%;\n+  /* border-radius: 50%; */\n+  box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff;\n }\n \n@@ -30,9 +31,9 @@\n \n .list {\n   flex: 3;\n   display: flex;\n-  gap: 10rem;\n+  gap: 2rem;\n   justify-content: center;\n   align-items: center;\n   flex-direction: column;\n }\n"
+                },
+                {
+                    "date": 1671628966982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,20 @@\n   align-items: center;\n }\n \n .image {\n-  width: 10rem;\n+  /* width: 10rem;\n   height: 10rem;\n-  /* border-radius: 50%; */\n+  border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n-  border: 5px solid #e1c6ff;\n+  border: 5px solid #e1c6ff; */\n+  height: 500px;\n+  width: 500px;\n+  border: solid 1px #000;\n+  padding-left: 300px;\n+  box-sizing: border-box;\n+  box-shadow: inset -350px 0 100px 0 #FFF;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671628978814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   border: 5px solid #e1c6ff; */\n   height: 500px;\n   width: 500px;\n   border: solid 1px #000;\n-  padding-left: 300px;\n+  //padding-left: 300px;\n   box-sizing: border-box;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n }\n \n"
+                },
+                {
+                    "date": 1671629571057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,14 +20,10 @@\n   border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n-  height: 500px;\n-  width: 500px;\n-  border: solid 1px #000;\n-  //padding-left: 300px;\n-  box-sizing: border-box;\n-  box-shadow: inset -350px 0 100px 0 #FFF;\n+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n+  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671629617375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n-  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n+  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 80%, transparent 50%);\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671629626296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n-  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 80%, transparent 50%);\n+  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 80%);\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671629633086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n   border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n-  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n-  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 80%);\n+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 80%, transparent 50%);\n+  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671629644500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n-  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 80%, transparent 50%);\n+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 100%, transparent 100%);\n   mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671629660340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n-  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 100%, transparent 100%);\n+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 58% 78%, black 40%, transparent 50%);\n   mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671629667727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n-  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 58% 78%, black 40%, transparent 50%);\n+  -webkit-mask-image: radial-gradient(ellipse 10% 80% at 48% 78%, black 40%, transparent 50%);\n   mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671629776737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,16 @@\n   border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n-  -webkit-mask-image: radial-gradient(ellipse 10% 80% at 48% 78%, black 40%, transparent 50%);\n-  mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);\n+  --f :40px; /* control the fading */\n+\n+  -webkit-mask:\n+    radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n+    linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n+    linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f),\n+    linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n+  -webkit-mask-repeat: no-repeat;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671629813977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   --f :40px; /* control the fading */\n \n   -webkit-mask:\n     radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n-    linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n+    /* linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)), */\n     linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f),\n     linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n   -webkit-mask-repeat: no-repeat;\n }\n"
+                },
+                {
+                    "date": 1671629820554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n   --f :40px; /* control the fading */\n \n   -webkit-mask:\n     radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n-    /* linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)), */\n-    linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f),\n+    linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n+    /* linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f), */\n     linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n   -webkit-mask-repeat: no-repeat;\n }\n \n"
+                },
+                {
+                    "date": 1671629826738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   -webkit-mask:\n     radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n     linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n     /* linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f), */\n-    linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n+    /* linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f)); */\n   -webkit-mask-repeat: no-repeat;\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671629832576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   -webkit-mask:\n     radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n     linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n     /* linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f), */\n-    /* linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f)); */\n+    linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n   -webkit-mask-repeat: no-repeat;\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671629854355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n     linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n     /* linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f), */\n     linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n-  -webkit-mask-repeat: no-repeat;\n+  /* -webkit-mask-repeat: no-repeat; */\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671629860570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,10 @@\n   -webkit-mask:\n     radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n     linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n     /* linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f), */\n-    linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n-  /* -webkit-mask-repeat: no-repeat; */\n+    /* linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f)); */\n+  -webkit-mask-repeat: no-repeat;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671629866578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,11 +24,11 @@\n   --f :40px; /* control the fading */\n \n   -webkit-mask:\n     radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n-    linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)),\n+    /* linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)), */\n     /* linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f), */\n-    /* linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f)); */\n+    linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n   -webkit-mask-repeat: no-repeat;\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671630034633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,16 +20,11 @@\n   border-radius: 50%;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n-  --f :40px; /* control the fading */\n+  \n+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);\n \n-  -webkit-mask:\n-    radial-gradient(at 0 0,#000,#0000 70%) 100% 100%/var(--f) var(--f),\n-    /* linear-gradient( 90deg,#000,#0000) 100% 0/var(--f) calc(100% - var(--f)), */\n-    /* linear-gradient(180deg,#000,#0000) 0 100%/calc(100% - var(--f)) var(--f), */\n-    linear-gradient(#000 0 0) 0 0/calc(100% - var(--f)) calc(100% - var(--f));\n-  -webkit-mask-repeat: no-repeat;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671630052326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,14 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);\n-\n+  height: 500px;\n+  width: 500px;\n+  border: solid 1px #000;\n+  padding-left: 300px;\n+  box-sizing: border-box;\n+  box-shadow: inset -350px 0 100px 0 #FFF;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671630083276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,14 +21,14 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  height: 500px;\n-  width: 500px;\n-  border: solid 1px #000;\n-  padding-left: 300px;\n-  box-sizing: border-box;\n-  box-shadow: inset -350px 0 100px 0 #FFF;\n+  background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 48%, rgba(2,2,2,1) 100%); /* FF3.6-15 */\n+\n+background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(255,255,255,0) 48%,rgba(2,2,2,1) 100%); /* Chrome10-25,Safari5.1-6 */\n+\n+background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(255,255,255,0) 48%,rgba(2,2,2,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\n+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#020202',GradientType=1 ); /* IE6-9 */\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671630320171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,14 +21,20 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 48%, rgba(2,2,2,1) 100%); /* FF3.6-15 */\n+  position: absolute;\n+    bottom: 0px;\n \n-background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(255,255,255,0) 48%,rgba(2,2,2,1) 100%); /* Chrome10-25,Safari5.1-6 */\n-\n-background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(255,255,255,0) 48%,rgba(2,2,2,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\n-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#020202',GradientType=1 ); /* IE6-9 */\n+    display: block;\n+  \n+    width: 100%;\n+    height: 50px;\n+  \n+    background-image: linear-gradient(to bottom, \n+        rgba(255, 255, 255, 0), \n+        rgba(255, 255, 255, 0.9)\n+    100%);\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671630355968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,20 +21,31 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  position: absolute;\n-    bottom: 0px;\n-\n-    display: block;\n-  \n-    width: 100%;\n-    height: 50px;\n-  \n-    background-image: linear-gradient(to bottom, \n-        rgba(255, 255, 255, 0), \n-        rgba(255, 255, 255, 0.9)\n-    100%);\n+  position: relative; \n+  bottom: 4em;\n+  height: 4em;\n+  background: -webkit-linear-gradient(\n+      rgba(255, 255, 255, 0) 0%,\n+      rgba(255, 255, 255, 1) 100%\n+  ); \n+  background-image: -moz-linear-gradient(\n+      rgba(255, 255, 255, 0) 0%,\n+      rgba(255, 255, 255, 1) 100%\n+  );\n+  background-image: -o-linear-gradient(\n+      rgba(255, 255, 255, 0) 0%,\n+      rgba(255, 255, 255, 1) 100%\n+  );\n+  background-image: linear-gradient(\n+      rgba(255, 255, 255, 0) 0%,\n+      rgba(255, 255, 255, 1) 100%\n+  );\n+  background-image: -ms-linear-gradient(\n+      rgba(255, 255, 255, 0) 0%,\n+      rgba(255, 255, 255, 1) 100%\n+  );\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671630715852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,31 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  position: relative; \n-  bottom: 4em;\n-  height: 4em;\n-  background: -webkit-linear-gradient(\n-      rgba(255, 255, 255, 0) 0%,\n-      rgba(255, 255, 255, 1) 100%\n-  ); \n-  background-image: -moz-linear-gradient(\n-      rgba(255, 255, 255, 0) 0%,\n-      rgba(255, 255, 255, 1) 100%\n-  );\n-  background-image: -o-linear-gradient(\n-      rgba(255, 255, 255, 0) 0%,\n-      rgba(255, 255, 255, 1) 100%\n-  );\n-  background-image: linear-gradient(\n-      rgba(255, 255, 255, 0) 0%,\n-      rgba(255, 255, 255, 1) 100%\n-  );\n-  background-image: -ms-linear-gradient(\n-      rgba(255, 255, 255, 0) 0%,\n-      rgba(255, 255, 255, 1) 100%\n-  );\n+  mask-image: linear-gradient(to right, white, transparent); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631075411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  mask-image: linear-gradient(to right, white, transparent); \n+  mask-image: linear-gradient(to right, transparent 10%, transparent); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631081872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  mask-image: linear-gradient(to right, transparent 10%, transparent); \n+  mask-image: linear-gradient(to right, white, transparent); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631092057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  mask-image: linear-gradient(to right, white, transparent); \n+  mask-image: linear-gradient(to right, white, transparent 10%); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631098458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  mask-image: linear-gradient(to right, white, transparent 10%); \n+  mask-image: linear-gradient(to right, white, transparent 90%); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631107860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  mask-image: linear-gradient(to right, white, transparent 90%); \n+  mask-image: linear-gradient(to right, white, transparent 92%); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631121970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  mask-image: linear-gradient(to right, white, transparent 92%); \n+  mask-image: linear-gradient(to right, white, transparent); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631129834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   border: 5px solid #e1c6ff; */\n   \n-  mask-image: linear-gradient(to right, white, transparent); \n+  mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631768139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n   align-items: center;\n }\n \n .image {\n-  /* width: 10rem;\n+  width: 10rem;\n   height: 10rem;\n-  border-radius: 50%;\n+  /* border-radius: 50%; */\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n-  border: 5px solid #e1c6ff; */\n+  /* border: 5px solid #e1c6ff; */\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n \n"
+                },
+                {
+                    "date": 1671631781641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n .image {\n   width: 10rem;\n   height: 10rem;\n   /* border-radius: 50%; */\n-  box-shadow: inset -350px 0 100px 0 #FFF;\n+  /* box-shadow: inset -350px 0 100px 0 #FFF; */\n   overflow: hidden;\n   /* border: 5px solid #e1c6ff; */\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n"
+                },
+                {
+                    "date": 1671631787445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n .image {\n   width: 10rem;\n   height: 10rem;\n   /* border-radius: 50%; */\n-  /* box-shadow: inset -350px 0 100px 0 #FFF; */\n+  box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   /* border: 5px solid #e1c6ff; */\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n"
+                },
+                {
+                    "date": 1671631821502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,12 @@\n   align-items: center;\n }\n \n .image {\n-  width: 10rem;\n+  /* width: 10rem;\n   height: 10rem;\n-  /* border-radius: 50%; */\n   box-shadow: inset -350px 0 100px 0 #FFF;\n-  overflow: hidden;\n-  /* border: 5px solid #e1c6ff; */\n+  overflow: hidden; */\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n \n"
+                },
+                {
+                    "date": 1671631829659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n \n .image {\n   /* width: 10rem;\n   height: 10rem;\n-  box-shadow: inset -350px 0 100px 0 #FFF;\n-  overflow: hidden; */\n+  box-shadow: inset -350px 0 100px 0 #FFF; */\n+  overflow: hidden;\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n \n"
+                },
+                {
+                    "date": 1671631837328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n   align-items: center;\n }\n \n .image {\n-  /* width: 10rem;\n+  width: 20rem;\n   height: 10rem;\n-  box-shadow: inset -350px 0 100px 0 #FFF; */\n+  box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n"
+                },
+                {
+                    "date": 1671631848616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \n .image {\n   width: 20rem;\n   height: 10rem;\n-  box-shadow: inset -350px 0 100px 0 #FFF;\n+  /* box-shadow: inset -350px 0 100px 0 #FFF; */\n   overflow: hidden;\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n"
+                },
+                {
+                    "date": 1671631855683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n }\n \n .image {\n   width: 20rem;\n-  height: 10rem;\n+  height: 30rem;\n   /* box-shadow: inset -350px 0 100px 0 #FFF; */\n   overflow: hidden;\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n"
+                },
+                {
+                    "date": 1671631887410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n   align-items: center;\n }\n \n .image {\n-  width: 20rem;\n-  height: 30rem;\n-  /* box-shadow: inset -350px 0 100px 0 #FFF; */\n+  width: 10rem;\n+  height: 10rem;\n+  box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n"
+                },
+                {
+                    "date": 1671631923872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   width: 10rem;\n   height: 10rem;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n-  \n+  padding-right:2rem;\n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671631937758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   width: 10rem;\n   height: 10rem;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n-  padding-right:2rem;\n+  padding-right:15rem;\n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1671631967348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,11 @@\n   width: 10rem;\n   height: 10rem;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n-  padding-right:15rem;\n+  padding-right:17rem;\n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n+  white-space: pre-line;\n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671631998035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n }\n \n .image {\n   width: 10rem;\n-  height: 10rem;\n+  /* height: 10rem; */\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   padding-right:17rem;\n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n"
+                },
+                {
+                    "date": 1671632033163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,14 @@\n }\n \n .image {\n   width: 10rem;\n-  /* height: 10rem; */\n+  height: 10rem;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n   padding-right:17rem;\n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n-  white-space: pre-line;\n+  \n }\n \n .image img {\n   width: 10rem;\n@@ -36,8 +36,9 @@\n   gap: 2rem;\n   justify-content: center;\n   align-items: center;\n   flex-direction: column;\n+  white-space: pre-line;\n }\n \n .carts address {\n   white-space: pre;\n"
+                },
+                {
+                    "date": 1671632066121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,13 +36,12 @@\n   gap: 2rem;\n   justify-content: center;\n   align-items: center;\n   flex-direction: column;\n-  white-space: pre-line;\n }\n \n .carts address {\n-  white-space: pre;\n+  white-space: pre-line;\n }\n \n @media (min-width: 768px) {\n   .carts {\n"
+                },
+                {
+                    "date": 1671632080391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   width: 10rem;\n   height: 10rem;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n-  padding-right:17rem;\n+  \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n   \n }\n \n"
+                },
+                {
+                    "date": 1671632129885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,9 @@\n   width: 10rem;\n   height: 10rem;\n   box-shadow: inset -350px 0 100px 0 #FFF;\n   overflow: hidden;\n-  \n   mask-image: linear-gradient(to right, #ffe2ff, transparent); \n-  \n }\n \n .image img {\n   width: 10rem;\n"
+                },
+                {
+                    "date": 1671632260617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n-  color: #ffe2ff;\n+  color: #332D5A;;\n   display: flex;\n   justify-content: space-between;\n   gap: 1rem;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1671632266772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n-  color: #332D5A;;\n+  color: #ffe2ff;\n   display: flex;\n   justify-content: space-between;\n   gap: 1rem;\n   flex-direction: column;\n"
+                },
+                {
+                    "date": 1671632272918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .carts {\n   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);\n   border-radius: 6px;\n-  background-color: #2b2b2b;\n+  background-color: #332D5A;;\n   padding: 2rem;\n   max-width: 50rem;\n   width: 80%;\n   margin: -3rem auto;\n"
+                }
+            ],
+            "date": 1671461351725,
+            "name": "Commit-0",
+            "content": ".carts {\n  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);\n  border-radius: 6px;\n  background-color: #2b2b2b;\n  padding: 2rem;\n  max-width: 50rem;\n  width: 80%;\n  margin: -3rem auto;\n  color: #d5eeeb;\n  display: flex;\n  justify-content: space-between;\n  gap: 1rem;\n  flex-direction: column;\n  align-items: center;\n}\n\n.image {\n  width: 10rem;\n  height: 10rem;\n  border-radius: 50%;\n  overflow: hidden;\n  border: 5px solid white;\n}\n\n.image img {\n  width: 10rem;\n  height: 10rem;\n  object-fit: cover;\n}\n\n.list {\n  flex: 3;\n  display: flex;\n  gap: 2rem;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.carts address {\n  white-space: pre;\n}\n\n@media (min-width: 768px) {\n  .carts {\n    padding: 2rem;\n    margin: -5rem auto;\n    gap: 3rem;\n    flex-direction: row;\n    align-items: stretch;\n  }\n\n  .image {\n    width: 20rem;\n    height: 20rem;\n  }\n\n  .image img {\n    width: 20rem;\n    height: 20rem;\n  }\n\n  .list {\n    align-items: flex-start;\n  }\n}"
+        }
+    ]
+}

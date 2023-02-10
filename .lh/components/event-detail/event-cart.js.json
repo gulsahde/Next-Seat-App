@@ -1,0 +1,90 @@
+{
+    "sourceFile": "components/event-detail/event-cart.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1671461331592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671461569427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   // TIME FORMAT CONVERTER - END\n   const locationText = location.replace(', ', '\\n');\n \n   return (\n-    <section className={styles.Cart}>\n+    <section className={styles.cart}>\n       <div className={styles.image}>\n         <img src={`/${image}`} alt={imageAlt} />\n       </div>\n       <ul className={styles.list}>\n"
+                },
+                {
+                    "date": 1671461593324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   // TIME FORMAT CONVERTER - END\n   const locationText = location.replace(', ', '\\n');\n \n   return (\n-    <section className={styles.cart}>\n+    <section className={styles.carts}>\n       <div className={styles.image}>\n         <img src={`/${image}`} alt={imageAlt} />\n       </div>\n       <ul className={styles.list}>\n"
+                },
+                {
+                    "date": 1671628620710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import LocationIcon from '../icons/location-icon';\n import CalendarIcon from '../icons/calendar-icon';\n import CartItem from './cart-item';\n import TimeIcon from '../icons/time-icon';\n-import styles from './event-Cart.module.css';\n+import styles from './event-cart.module.css';\n \n function EventCart(props) {\n   const { date, time, location, image, imageAlt } = props;\n \n"
+                },
+                {
+                    "date": 1676021117590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,10 @@\n import CartItem from './cart-item';\n import TimeIcon from '../icons/time-icon';\n import styles from './event-cart.module.css';\n \n+import Image from 'next/image'\n+\n function EventCart(props) {\n   const { date, time, location, image, imageAlt } = props;\n \n   const readableDateFormat = new Date(date).toLocaleDateString('en-US', {\n@@ -21,9 +23,15 @@\n \n   return (\n     <section className={styles.carts}>\n       <div className={styles.image}>\n-        <img src={`/${image}`} alt={imageAlt} />\n+        {/* <img src={`/${image}`} alt={imageAlt} /> */}\n+        <Image\n+          src={`/${image}`}\n+          alt={imageAlt}\n+          width={160}\n+          height={160}\n+        />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n           <time>{readableDateFormat}</time>\n"
+                },
+                {
+                    "date": 1676026152319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={160}\n-          height={160}\n+          width={240}\n+          height={240}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026212820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={240}\n-          height={240}\n+          width={400}\n+          height={400}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026221419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={400}\n-          height={400}\n+          width={300}\n+          height={300}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026309503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={300}\n-          height={300}\n+          width={400}\n+          height={400}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026341249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,15 +23,15 @@\n \n   return (\n     <section className={styles.carts}>\n       <div className={styles.image}>\n-        {/* <img src={`/${image}`} alt={imageAlt} /> */}\n-        <Image\n+        <img src={`/${image}`} alt={imageAlt} />\n+        {/* <Image\n           src={`/${image}`}\n           alt={imageAlt}\n           width={400}\n           height={400}\n-        />\n+        /> */}\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n           <time>{readableDateFormat}</time>\n"
+                },
+                {
+                    "date": 1676026361102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,15 +23,15 @@\n \n   return (\n     <section className={styles.carts}>\n       <div className={styles.image}>\n-        <img src={`/${image}`} alt={imageAlt} />\n-        {/* <Image\n+        {/* <img src={`/${image}`} alt={imageAlt} /> */}\n+        <Image\n           src={`/${image}`}\n           alt={imageAlt}\n           width={400}\n           height={400}\n-        /> */}\n+        />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n           <time>{readableDateFormat}</time>\n"
+                },
+                {
+                    "date": 1676026387826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={400}\n-          height={400}\n+          width={240}\n+          height={240}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026450892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={240}\n-          height={240}\n+          width={300}\n+          height={300}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026477812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={300}\n-          height={300}\n+          width={400}\n+          height={400}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026506512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={400}\n-          height={400}\n+          width={240}\n+          height={240}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026572240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={240}\n-          height={240}\n+          width={300}\n+          height={300}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676026584168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n         {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n-          width={300}\n-          height={300}\n+          width={400}\n+          height={400}\n         />\n       </div>\n       <ul className={styles.list}>\n         <CartItem icon={CalendarIcon}>\n"
+                },
+                {
+                    "date": 1676035267064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n \n   return (\n     <section className={styles.carts}>\n       <div className={styles.image}>\n-        {/* <img src={`/${image}`} alt={imageAlt} /> */}\n         <Image\n           src={`/${image}`}\n           alt={imageAlt}\n           width={400}\n"
+                },
+                {
+                    "date": 1676035272272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n   const [hourString, minute] = time.split(\":\");\n   const hour = +hourString % 24;\n   const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n   // TIME FORMAT CONVERTER - END\n+  \n   const locationText = location.replace(', ', '\\n');\n \n   return (\n     <section className={styles.carts}>\n"
+                }
+            ],
+            "date": 1671461331592,
+            "name": "Commit-0",
+            "content": "import LocationIcon from '../icons/location-icon';\nimport CalendarIcon from '../icons/calendar-icon';\nimport CartItem from './cart-item';\nimport TimeIcon from '../icons/time-icon';\nimport styles from './event-Cart.module.css';\n\nfunction EventCart(props) {\n  const { date, time, location, image, imageAlt } = props;\n\n  const readableDateFormat = new Date(date).toLocaleDateString('en-US', {\n    day: 'numeric',\n    month: 'long',\n    year: 'numeric',\n  });\n  // TIME FORMAT CONVERTER - BEGINNING\n  const [hourString, minute] = time.split(\":\");\n  const hour = +hourString % 24;\n  const readableTimeFormat = (hour % 12 || 12) + \":\" + minute + (hour < 12 ? \" AM\" : \" PM\");\n  // TIME FORMAT CONVERTER - END\n  const locationText = location.replace(', ', '\\n');\n\n  return (\n    <section className={styles.Cart}>\n      <div className={styles.image}>\n        <img src={`/${image}`} alt={imageAlt} />\n      </div>\n      <ul className={styles.list}>\n        <CartItem icon={CalendarIcon}>\n          <time>{readableDateFormat}</time>\n        </CartItem>\n        <CartItem icon={TimeIcon}>\n          <time>{readableTimeFormat}</time>\n        </CartItem>\n        <CartItem icon={LocationIcon}>\n          <address>{locationText}</address>\n        </CartItem>\n      </ul>\n    </section>\n  );\n}\n\nexport default EventCart;\n"
+        }
+    ]
+}

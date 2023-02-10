@@ -1,0 +1,42 @@
+{
+    "sourceFile": "pages/_app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1675413448095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675414334769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n function MyApp({ Component, pageProps }) {\n   return (\n     <Layout>\n       <Head>\n+        <title>Next Seat</title>\n         <meta\n           name=\"viewport\"\n           content=\"initial-scale=1.0, width=device-width\"\n         />\n"
+                },
+                {
+                    "date": 1675414354011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n function MyApp({ Component, pageProps }) {\n   return (\n     <Layout>\n       <Head>\n-        <title>Next Seat</title>\n+        {/* <title>Next Seat</title> */}\n         <meta\n           name=\"viewport\"\n           content=\"initial-scale=1.0, width=device-width\"\n         />\n"
+                },
+                {
+                    "date": 1675414432997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n function MyApp({ Component, pageProps }) {\n   return (\n     <Layout>\n       <Head>\n-        {/* <title>Next Seat</title> */}\n+        <title>Next Seat</title>\n         <meta\n           name=\"viewport\"\n           content=\"initial-scale=1.0, width=device-width\"\n         />\n"
+                },
+                {
+                    "date": 1675414499051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n   return (\n     <Layout>\n       <Head>\n         <title>Next Seat</title>\n+        <meta name=\"description\"\n+        content=\"Find tickets online for concerts, sports, theater, other events near you from Next Seat.\"/>\n         <meta\n           name=\"viewport\"\n           content=\"initial-scale=1.0, width=device-width\"\n         />\n"
+                },
+                {
+                    "date": 1675414507673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n   return (\n     <Layout>\n       <Head>\n         <title>Next Seat</title>\n-        <meta name=\"description\"\n-        content=\"Find tickets online for concerts, sports, theater, other events near you from Next Seat.\"/>\n+        <meta \n+          name=\"description\"\n+          content=\"Find tickets online for concerts, sports, theater, other events near you from Next Seat.\" />\n         <meta\n           name=\"viewport\"\n           content=\"initial-scale=1.0, width=device-width\"\n         />\n"
+                },
+                {
+                    "date": 1675414798908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,8 @@\n function MyApp({ Component, pageProps }) {\n   return (\n     <Layout>\n       <Head>\n-        <title>Next Seat</title>\n-        <meta \n-          name=\"description\"\n-          content=\"Find tickets online for concerts, sports, theater, other events near you from Next Seat.\" />\n         <meta\n           name=\"viewport\"\n           content=\"initial-scale=1.0, width=device-width\"\n         />\n"
+                }
+            ],
+            "date": 1675413448095,
+            "name": "Commit-0",
+            "content": "import Layout from '../components/layout/layout'\nimport '../styles/globals.css'\nimport Head from 'next/head'\n\nfunction MyApp({ Component, pageProps }) {\n  return (\n    <Layout>\n      <Head>\n        <meta\n          name=\"viewport\"\n          content=\"initial-scale=1.0, width=device-width\"\n        />\n      </Head>\n      <Component {...pageProps} />\n    </Layout>\n  )\n}\n\nexport default MyApp\n"
+        }
+    ]
+}

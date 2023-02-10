@@ -1,0 +1,46 @@
+{
+    "sourceFile": "components/ui/error-alert.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1671622591390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671633054838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     padding: 1rem 2rem;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n     background-color: #d5bdfc;\r\n-    color: #38028d;\r\n+    color: #C58940;\r\n     font-weight: bold;\r\n     font-size: 1.5rem;\r\n     text-align: center;\r\n     border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1671633070594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     margin: 1rem auto;\r\n     padding: 1rem 2rem;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n-    background-color: #d5bdfc;\r\n+    background-color: rgb(250, 234, 177);\r\n     color: #C58940;\r\n     font-weight: bold;\r\n     font-size: 1.5rem;\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1671633079259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     padding: 1rem 2rem;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n     background-color: rgb(250, 234, 177);\r\n-    color: #C58940;\r\n+    color: rgb(197, 137, 64);\r\n     font-weight: bold;\r\n     font-size: 1.5rem;\r\n     text-align: center;\r\n     border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1671633097604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     padding: 1rem 2rem;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n     background-color: rgb(250, 234, 177);\r\n-    color: rgb(197, 137, 64);\r\n+    color: rgb(115, 95, 50);\r\n     font-weight: bold;\r\n     font-size: 1.5rem;\r\n     text-align: center;\r\n     border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1671633105817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     margin: 1rem auto;\r\n     padding: 1rem 2rem;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n-    background-color: rgb(250, 234, 177);\r\n+    background-color: rgb(198, 151, 73);\r\n     color: rgb(115, 95, 50);\r\n     font-weight: bold;\r\n     font-size: 1.5rem;\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1671633126510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     margin: 1rem auto;\r\n     padding: 1rem 2rem;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n-    background-color: rgb(198, 151, 73);\r\n+    background-color: rgb(236, 179, 101);\r\n     color: rgb(115, 95, 50);\r\n     font-weight: bold;\r\n     font-size: 1.5rem;\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1671633140585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     margin: 1rem auto;\r\n     padding: 1rem 2rem;\r\n     width: 90%;\r\n     max-width: 40rem;\r\n-    background-color: rgb(236, 179, 101);\r\n+    background-color: rgb(255, 219, 137);\r\n     color: rgb(115, 95, 50);\r\n     font-weight: bold;\r\n     font-size: 1.5rem;\r\n     text-align: center;\r\n"
+                }
+            ],
+            "date": 1671622591390,
+            "name": "Commit-0",
+            "content": ".alert {\r\n    margin: 1rem auto;\r\n    padding: 1rem 2rem;\r\n    width: 90%;\r\n    max-width: 40rem;\r\n    background-color: #d5bdfc;\r\n    color: #38028d;\r\n    font-weight: bold;\r\n    font-size: 1.5rem;\r\n    text-align: center;\r\n    border-radius: 6px;\r\n  }"
+        }
+    ]
+}

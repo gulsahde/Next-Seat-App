@@ -1,0 +1,142 @@
+{
+    "sourceFile": "pages/events/[eventId].js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 31,
+            "patches": [
+                {
+                    "date": 1671018630546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1671195674340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,21 @@\n- function EventDetailPage(){\r\n-    return(\r\n-      <div>\r\n-        <h1>Event Detail Page</h1>\r\n-      </div>\r\n-    )\r\n+import { useRouter } from \"next/react\";\r\n+import { getEventById } from \"../../dummy-data\";\r\n+\r\n\\ No newline at end of file\n+function EventDetailPage() {\r\n+\r\n+  const router = useRouter();\r\n+  const eventId = router.query.eventId; //e1, e2, e3\r\n+  const event = getEventById(eventId);\r\n+\r\n+  if(!event){\r\n+    return <p>No event found!</p>\r\n   }\r\n-  \r\n-  export default EventDetailPage;\n+\r\n+  return (\r\n+    <div>\r\n+      <h1>Event Detail Page</h1>\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671196186070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n   const eventId = router.query.eventId; //e1, e2, e3\r\n   const event = getEventById(eventId);\r\n \r\n   if(!event){\r\n-    return <p>No event found!</p>\r\n+    return( \r\n+    <><h3>There aren&apos;t any events</h3><p>Check back another time, or double-check your spelling.</p></>\r\n+    );\r\n   }\r\n \r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1671197077783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,12 @@\n import { useRouter } from \"next/react\";\r\n import { getEventById } from \"../../dummy-data\";\r\n+import { Fragment } from \"react\";\r\n+import EventSummary from '../../components/event-detail/event-summary';\r\n+import EventLogistics from '../../components/event-detail/event-logistics';\r\n+import EventContent from '../../components/event-detail/event-content';\r\n \r\n+\r\n function EventDetailPage() {\r\n \r\n   const router = useRouter();\r\n   const eventId = router.query.eventId; //e1, e2, e3\r\n@@ -13,11 +18,11 @@\n     );\r\n   }\r\n \r\n   return (\r\n-    <div>\r\n-      <h1>Event Detail Page</h1>\r\n-    </div>\r\n+    <Fragment>\r\n+      <EventSummary/>\r\n+    </Fragment>\r\n   )\r\n }\r\n \r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1671197159818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,12 @@\n \r\n   return (\r\n     <Fragment>\r\n       <EventSummary/>\r\n+      <EventLogistics/>\r\n+      <EventContent>\r\n+        <p>{event.info}</p>\r\n+      </EventContent>\r\n     </Fragment>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1671197497980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { useRouter } from \"next/react\";\r\n+import { useRouter } from \"next/router\";\r\n import { getEventById } from \"../../dummy-data\";\r\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventLogistics from '../../components/event-detail/event-logistics';\r\n"
+                },
+                {
+                    "date": 1671198269767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   return (\r\n     <Fragment>\r\n-      <EventSummary/>\r\n+      <EventSummary title={event.title}/>\r\n       <EventLogistics/>\r\n       <EventContent>\r\n         <p>{event.info}</p>\r\n       </EventContent>\r\n"
+                },
+                {
+                    "date": 1671198366941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   return (\r\n     <Fragment>\r\n       <EventSummary title={event.title}/>\r\n-      <EventLogistics/>\r\n+      <EventLogistics date={event.date} time={event.time} location={event.locaion} image={event.image} imageAlt={event.imageAlt}/>\r\n       <EventContent>\r\n         <p>{event.info}</p>\r\n       </EventContent>\r\n     </Fragment>\r\n"
+                },
+                {
+                    "date": 1671198378558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   return (\r\n     <Fragment>\r\n       <EventSummary title={event.title}/>\r\n-      <EventLogistics date={event.date} time={event.time} location={event.locaion} image={event.image} imageAlt={event.imageAlt}/>\r\n+      <EventLogistics date={event.date} time={event.time} location={event.locaion} image={event.image} imageAlt={event.title}/>\r\n       <EventContent>\r\n         <p>{event.info}</p>\r\n       </EventContent>\r\n     </Fragment>\r\n"
+                },
+                {
+                    "date": 1671198417897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,14 @@\n \r\n   return (\r\n     <Fragment>\r\n       <EventSummary title={event.title}/>\r\n-      <EventLogistics date={event.date} time={event.time} location={event.locaion} image={event.image} imageAlt={event.title}/>\r\n+      <EventLogistics \r\n+        date={event.date} \r\n+        time={event.time} \r\n+        location={event.location} \r\n+        image={event.image} \r\n+        imageAlt={event.title}/>\r\n       <EventContent>\r\n         <p>{event.info}</p>\r\n       </EventContent>\r\n     </Fragment>\r\n"
+                },
+                {
+                    "date": 1671198474319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   const event = getEventById(eventId);\r\n \r\n   if(!event){\r\n     return( \r\n-    <><h3>There aren&apos;t any events</h3><p>Check back another time, or double-check your spelling.</p></>\r\n+    <><h3>There aren&apos;t any events.</h3><p>Check back another time, or double-check your spelling.</p></>\r\n     );\r\n   }\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1671461448027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { useRouter } from \"next/router\";\r\n import { getEventById } from \"../../dummy-data\";\r\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n-import EventLogistics from '../../components/event-detail/event-logistics';\r\n+import EventCart from '../../components/event-detail/event-cart';\r\n import EventContent from '../../components/event-detail/event-content';\r\n \r\n \r\n function EventDetailPage() {\r\n@@ -20,9 +20,9 @@\n \r\n   return (\r\n     <Fragment>\r\n       <EventSummary title={event.title}/>\r\n-      <EventLogistics \r\n+      <EventCart \r\n         date={event.date} \r\n         time={event.time} \r\n         location={event.location} \r\n         image={event.image} \r\n"
+                },
+                {
+                    "date": 1671623222040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventCart from '../../components/event-detail/event-cart';\r\n import EventContent from '../../components/event-detail/event-content';\r\n+import ErrorAlert from \"../../components/ui/error-alert\";\r\n \r\n \r\n function EventDetailPage() {\r\n \r\n@@ -13,9 +14,11 @@\n   const event = getEventById(eventId);\r\n \r\n   if(!event){\r\n     return( \r\n-    <><h3>There aren&apos;t any events.</h3><p>Check back another time, or double-check your spelling.</p></>\r\n+      <ErrorAlert>\r\n+        <h3>There aren&apos;t any events.</h3><p>Check back another time, or double-check your spelling.</p>\r\n+      </ErrorAlert>\r\n     );\r\n   }\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1671623260777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   if(!event){\r\n     return( \r\n       <ErrorAlert>\r\n-        <h3>There aren&apos;t any events.</h3><p>Check back another time, or double-check your spelling.</p>\r\n+        <p>There aren&apos;t any events. Check back another time, or double-check your spelling.</p>\r\n       </ErrorAlert>\r\n     );\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1674825577031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import { useRouter } from \"next/router\";\r\n-import { getEventById } from \"../../dummy-data\";\r\n+// import { getEventById } from \"../../dummy-data\";\r\n+import { getEventById } from \"../../helpers/api-utils\";\r\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventCart from '../../components/event-detail/event-cart';\r\n import EventContent from '../../components/event-detail/event-content';\r\n@@ -12,29 +13,36 @@\n   const router = useRouter();\r\n   const eventId = router.query.eventId; //e1, e2, e3\r\n   const event = getEventById(eventId);\r\n \r\n-  if(!event){\r\n-    return( \r\n+  if (!event) {\r\n+    return (\r\n       <ErrorAlert>\r\n         <p>There aren&apos;t any events. Check back another time, or double-check your spelling.</p>\r\n       </ErrorAlert>\r\n     );\r\n   }\r\n \r\n   return (\r\n     <Fragment>\r\n-      <EventSummary title={event.title}/>\r\n-      <EventCart \r\n-        date={event.date} \r\n-        time={event.time} \r\n-        location={event.location} \r\n-        image={event.image} \r\n-        imageAlt={event.title}/>\r\n+      <EventSummary title={event.title} />\r\n+      <EventCart\r\n+        date={event.date}\r\n+        time={event.time}\r\n+        location={event.location}\r\n+        image={event.image}\r\n+        imageAlt={event.title} />\r\n       <EventContent>\r\n         <p>{event.info}</p>\r\n       </EventContent>\r\n     </Fragment>\r\n   )\r\n }\r\n \r\n+\r\n+export async function getStaticProps(context) {\r\n+  const event = await getEventById(eventId);\r\n+  const eventId = context.params.eventId;\r\n+\r\n+}\r\n+\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1674829171040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,16 @@\n import { useRouter } from \"next/router\";\r\n-// import { getEventById } from \"../../dummy-data\";\r\n-import { getEventById } from \"../../helpers/api-utils\";\r\n+import { getEventById, getAllEvents } from \"../../helpers/api-utils\";\r\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventCart from '../../components/event-detail/event-cart';\r\n import EventContent from '../../components/event-detail/event-content';\r\n import ErrorAlert from \"../../components/ui/error-alert\";\r\n \r\n \r\n-function EventDetailPage() {\r\n+function EventDetailPage(props) {\r\n+  const event = props.selectedEvent;\r\n \r\n-  const router = useRouter();\r\n-  const eventId = router.query.eventId; //e1, e2, e3\r\n-  const event = getEventById(eventId);\r\n-\r\n   if (!event) {\r\n     return (\r\n       <ErrorAlert>\r\n         <p>There aren&apos;t any events. Check back another time, or double-check your spelling.</p>\r\n@@ -42,7 +38,18 @@\n export async function getStaticProps(context) {\r\n   const event = await getEventById(eventId);\r\n   const eventId = context.params.eventId;\r\n \r\n+  return {\r\n+    props: {\r\n+      selectedEvent: event,\r\n+    }\r\n+  }\r\n }\r\n-\r\n+export async function getStaticPaths() {\r\n+  const events = await getAllEvents();\r\n+  const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n+  return {\r\n+    paths: paths,\r\n+  }\r\n+}\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1674829991838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,7 +49,8 @@\n   const events = await getAllEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n+    fallback: false,\r\n   }\r\n }\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1674830059535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,11 +35,11 @@\n }\r\n \r\n \r\n export async function getStaticProps(context) {\r\n-  const event = await getEventById(eventId);\r\n   const eventId = context.params.eventId;\r\n \r\n+  const event = await getEventById(eventId);\r\n   return {\r\n     props: {\r\n       selectedEvent: event,\r\n     }\r\n"
+                },
+                {
+                    "date": 1674830134769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n \r\n \r\n export async function getStaticProps(context) {\r\n   const eventId = context.params.eventId;\r\n-\r\n   const event = await getEventById(eventId);\r\n   return {\r\n     props: {\r\n       selectedEvent: event,\r\n"
+                },
+                {
+                    "date": 1674830188665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import { useRouter } from \"next/router\";\r\n import { getEventById, getAllEvents } from \"../../helpers/api-utils\";\r\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventCart from '../../components/event-detail/event-cart';\r\n"
+                },
+                {
+                    "date": 1675074554231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,10 @@\n   const event = await getEventById(eventId);\r\n   return {\r\n     props: {\r\n       selectedEvent: event,\r\n-    }\r\n+    },\r\n+    revalidate: 30\r\n   }\r\n }\r\n export async function getStaticPaths() {\r\n   const events = await getAllEvents();\r\n"
+                },
+                {
+                    "date": 1675075975619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { getEventById, getAllEvents } from \"../../helpers/api-utils\";\r\n+import { getEventById, getFeaturedEvents } from \"../../helpers/api-utils\";\r\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventCart from '../../components/event-detail/event-cart';\r\n import EventContent from '../../components/event-detail/event-content';\r\n@@ -44,9 +44,9 @@\n     revalidate: 30\r\n   }\r\n }\r\n export async function getStaticPaths() {\r\n-  const events = await getAllEvents();\r\n+  const events = await getFeaturedEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n     fallback: false,\r\n"
+                },
+                {
+                    "date": 1675076724285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n   const events = await getFeaturedEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n-    fallback: false,\r\n+    fallback: true,\r\n   }\r\n }\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675077952670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n   const event = props.selectedEvent;\r\n \r\n   if (!event) {\r\n     return (\r\n-      <ErrorAlert>\r\n-        <p>There aren&apos;t any events. Check back another time, or double-check your spelling.</p>\r\n-      </ErrorAlert>\r\n+      <div className=\"center\">\r\n+        <p>Loading....</p>\r\n+      </div>\r\n     );\r\n   }\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1675077975679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n   const events = await getFeaturedEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n-    fallback: true,\r\n+    fallback: false,\r\n   }\r\n }\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675078172210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n   const events = await getFeaturedEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n-    fallback: false,\r\n+    fallback: true,\r\n   }\r\n }\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675078206623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n   const events = await getFeaturedEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n-    fallback: true,\r\n+    fallback: blocking,\r\n   }\r\n }\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675078214430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n   const events = await getFeaturedEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n-    fallback: blocking,\r\n+    fallback: 'blocking',\r\n   }\r\n }\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675078327326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n   const events = await getFeaturedEvents();\r\n   const paths = events.map((event) => ({ params: { eventId: event.id } }))\r\n   return {\r\n     paths: paths,\r\n-    fallback: 'blocking',\r\n+    fallback: true,\r\n   }\r\n }\r\n export default EventDetailPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675340296097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventCart from '../../components/event-detail/event-cart';\r\n import EventContent from '../../components/event-detail/event-content';\r\n import ErrorAlert from \"../../components/ui/error-alert\";\r\n+import Head from \"next/head\";\r\n \r\n-\r\n function EventDetailPage(props) {\r\n   const event = props.selectedEvent;\r\n \r\n   if (!event) {\r\n@@ -18,8 +18,14 @@\n   }\r\n \r\n   return (\r\n     <Fragment>\r\n+      <Head>\r\n+        <title>{event.title}</title>\r\n+        <meta\r\n+          name=\"description\"\r\n+          content=\"Tickets - Search all tickets, see seat locations.\" />\r\n+      </Head>\r\n       <EventSummary title={event.title} />\r\n       <EventCart\r\n         date={event.date}\r\n         time={event.time}\r\n"
+                },
+                {
+                    "date": 1675340495494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n       <Head>\r\n         <title>{event.title}</title>\r\n         <meta\r\n           name=\"description\"\r\n-          content=\"Tickets - Search all tickets, see seat locations.\" />\r\n+          content={event.info} />\r\n       </Head>\r\n       <EventSummary title={event.title} />\r\n       <EventCart\r\n         date={event.date}\r\n"
+                },
+                {
+                    "date": 1676035361147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n import { Fragment } from \"react\";\r\n import EventSummary from '../../components/event-detail/event-summary';\r\n import EventCart from '../../components/event-detail/event-cart';\r\n import EventContent from '../../components/event-detail/event-content';\r\n-import ErrorAlert from \"../../components/ui/error-alert\";\r\n import Head from \"next/head\";\r\n \r\n function EventDetailPage(props) {\r\n   const event = props.selectedEvent;\r\n"
+                }
+            ],
+            "date": 1671018630546,
+            "name": "Commit-0",
+            "content": " function EventDetailPage(){\r\n    return(\r\n      <div>\r\n        <h1>Event Detail Page</h1>\r\n      </div>\r\n    )\r\n  }\r\n  \r\n  export default EventDetailPage;"
+        }
+    ]
+}
